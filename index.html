@@ -400,55 +400,6 @@ una per dia sense fer terrabastall.<br>
       <a class="to-top" href="#inici">Tornar amunt ↑</a>
     </div>
   </footer>
-
-  <script>
-    // Menú mòbil
-    const toggle = document.querySelector(".nav-toggle");
-    const menu = document.querySelector("#menu");
-    const header = document.querySelector(".site-header");
-
-    toggle?.addEventListener("click", () => {
-      const expanded = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!expanded));
-      menu.classList.toggle("is-open");
-    });
-
-    let isScrollTicking = false;
-    function syncHeaderState() {
-      header?.classList.toggle("is-scrolled", window.scrollY > 24);
-      isScrollTicking = false;
-    }
-    window.addEventListener("scroll", () => {
-      if (isScrollTicking) return;
-      isScrollTicking = true;
-      window.requestAnimationFrame(syncHeaderState);
-    }, { passive: true });
-    header?.classList.toggle("is-scrolled", window.scrollY > 24);
-
-    // Slideshow simple
-    const slides = Array.from(document.querySelectorAll(".slide"));
-    const dots = Array.from(document.querySelectorAll(".dot"));
-    let i = 0;
-
-    function showSlide(next) {
-      slides[i].classList.remove("is-active");
-      dots[i]?.classList.remove("is-active");
-      i = next;
-      slides[i].classList.add("is-active");
-      dots[i]?.classList.add("is-active");
-    }
-
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    if (slides.length > 1 && !prefersReducedMotion) {
-      setInterval(() => {
-        const next = (i + 1) % slides.length;
-        showSlide(next);
-      }, 4000);
-    }
-
-    // Any al footer
-    document.querySelector("#year").textContent = new Date().getFullYear();
-  </script>
+  <script type="module" src="main.mjs"></script>
 </body>
 </html>

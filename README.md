@@ -5,7 +5,7 @@ Web estática (`index.html` + `estils.css` + recursos multimedia).
 ## Ejecutar en local (simple)
 
 ```bash
-cd /Users/adria/Sites/02.elsrainbows.cat/elsrainbows.cat
+cd </Path/To/Project/Folder/elsrainbows.cat>
 python3 -m http.server 5173
 ```
 
@@ -23,3 +23,16 @@ npx --yes live-server --port=5173 --open=index.html
 
 - `PicoCSS` vía CDN para tener un set base accesible y consistente.
 - `estils.css` mantiene la identidad visual del proyecto (colores, hero, galerías, etc.).
+
+## Tests unitarios
+
+```bash
+npm test
+```
+
+Cobertura actual:
+- Toggle de menú móvil.
+- Clase `is-scrolled` del header según scroll.
+- Avance automático del slideshow cada 4s (salvo `prefers-reduced-motion`).
+- Sincronización de dots activos con la slide activa.
+- Año actual en footer.
