@@ -36,3 +36,16 @@ Cobertura actual:
 - Avance automático del slideshow cada 4s (salvo `prefers-reduced-motion`).
 - Sincronización de dots activos con la slide activa.
 - Año actual en footer.
+
+## Deploy en Netlify
+
+Este repo ya incluye configuración en `netlify.toml` para deploy estático.
+
+Pasos en Netlify:
+1. `Add new site` -> `Import an existing project`.
+2. Conecta el repositorio.
+3. Build command: dejar vacío.
+4. Publish directory: `.` (raíz del repo).
+5. Deploy.
+
+Si quieres dominio propio (`elsrainbows.cat`), en `Domain settings` añade el dominio y apunta los DNS según las instrucciones de Netlify.
