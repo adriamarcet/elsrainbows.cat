@@ -266,7 +266,7 @@ h1, h2, h3, p, li, summary{
   color: #fff;
   display: inline-block;
   font-weight: 700;
-  max-width: 10ch;
+  max-width: 20ch;
   padding: .65rem 1rem;
 }
 .btn:hover{ opacity: .92; }
@@ -581,6 +581,24 @@ video:focus-visible{
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-legal{
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+}
+
+.footer-legal a{
+  font-size: .95rem;
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+}
+
+.footer-legal a:hover{
+  color: var(--text);
+  border-bottom-color: var(--line);
 }
 
 .to-top{
@@ -663,5 +681,14 @@ video:focus-visible{
 
   .scroll-down{
     bottom: 1rem;
+  }
+
+  .footer-inner{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-legal{
+    flex-wrap: wrap;
   }
 }

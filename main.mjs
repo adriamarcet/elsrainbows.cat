@@ -135,6 +135,38 @@ export function setFooterYear(yearElement, date = new Date()) {
   yearElement.textContent = String(date.getFullYear());
 }
 
+export function hydrateObfuscatedEmails(doc = document, { atobFn } = {}) {
+  if (!doc || typeof doc.querySelectorAll !== "function") return;
+
+  const decode =
+    typeof atobFn === "function"
+      ? atobFn
+      : (value) => {
+          try {
+            if (typeof window !== "undefined" && typeof window.atob === "function") {
+              return window.atob(value);
+            }
+          } catch (_error) {
+            return "";
+          }
+          return "";
+        };
+
+  const emailNodes = doc.querySelectorAll("[data-email-b64]");
+  emailNodes.forEach((node) => {
+    const encoded = node.getAttribute("data-email-b64") || "";
+    const email = decode(encoded);
+    if (!email || !email.includes("@")) return;
+
+    node.textContent = email;
+
+    if (typeof node.matches === "function" && node.matches("a")) {
+      node.removeAttribute("href");
+      node.removeAttribute("rel");
+    }
+  });
+}
+
 export function initPage(doc = document, win = window) {
   const toggle = doc.querySelector(".nav-toggle");
   const menu = doc.querySelector("#menu");
@@ -157,6 +189,9 @@ export function initPage(doc = document, win = window) {
   const form = doc.querySelector("form[data-netlify='true'], form[name='contacte-rainbows']");
   setupNetlifyAjaxForm(form, { fetchFn });
   setupNetlifyAjaxDelegation(doc, { fetchFn });
+
+  const atobFn = typeof win.atob === "function" ? win.atob.bind(win) : null;
+  hydrateObfuscatedEmails(doc, { atobFn });
 
   const year = doc.querySelector("#year");
   setFooterYear(year);
