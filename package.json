@@ -3,6 +3,18 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "watch:dev": "sh -c 'webpack --mode development --watch & python3 -m http.server 5173 --directory dist'",
     "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
   }
 }

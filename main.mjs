@@ -69,6 +69,55 @@ export function setupSlideshow({
   return { showSlide, start };
 }
 
+export function setupNetlifyAjaxForm(form, { fetchFn = fetch } = {}) {
+  if (!form || typeof fetchFn !== "function") return;
+
+  const feedback = form.querySelector("[data-form-feedback]");
+  const submitButton = form.querySelector("button[type='submit']");
+
+  function updateFeedback(message, isError = false) {
+    if (!feedback) return;
+
+    feedback.hidden = false;
+    feedback.textContent = message;
+    feedback.classList.toggle("is-error", isError);
+    feedback.classList.toggle("is-success", !isError);
+  }
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (form.dataset.submitting === "true") return;
+
+    form.dataset.submitting = "true";
+    submitButton?.setAttribute("aria-busy", "true");
+    if (submitButton) submitButton.disabled = true;
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetchFn("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (response && "ok" in response && !response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      updateFeedback("Gracies! Hem rebut el missatge.");
+      form.reset();
+    } catch (_error) {
+      updateFeedback("No s'ha pogut enviar. Torna-ho a provar en uns minuts.", true);
+    } finally {
+      delete form.dataset.submitting;
+      submitButton?.removeAttribute("aria-busy");
+      if (submitButton) submitButton.disabled = false;
+    }
+  });
+}
+
 export function setFooterYear(yearElement, date = new Date()) {
   if (!yearElement) return;
   yearElement.textContent = String(date.getFullYear());
@@ -88,6 +137,9 @@ export function initPage(doc = document, win = window) {
 
   const slideshow = setupSlideshow({ slides, dots, prefersReducedMotion });
   slideshow.start();
+
+  const form = doc.querySelector("form[data-netlify='true']");
+  setupNetlifyAjaxForm(form, { fetchFn: win.fetch?.bind(win) });
 
   const year = doc.querySelector("#year");
   setFooterYear(year);

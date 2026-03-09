@@ -506,6 +506,24 @@ main > .section{
   font-size: .95rem;
 }
 
+.form-feedback{
+  margin: .9rem 0 0;
+  padding: .65rem .8rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: rgba(255,255,255,.74);
+}
+
+.form-feedback.is-success{
+  border-color: rgba(32, 114, 52, .35);
+  color: #145523;
+}
+
+.form-feedback.is-error{
+  border-color: rgba(156, 41, 41, .35);
+  color: #8d2020;
+}
+
 .hp-field{
   position: absolute !important;
   width: 1px;

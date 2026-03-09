@@ -1,6 +1,6 @@
 # elsrainbows.cat
 
-Web estática (`index.html` + `estils.css` + recursos multimedia).
+Web estática con build de `webpack` para versionado de assets (`contenthash`).
 
 ## Ejecutar en local (simple)
 
@@ -18,6 +18,18 @@ Si quieres auto-recarga del navegador:
 ```bash
 npx --yes live-server --port=5173 --open=index.html
 ```
+
+## Build de producción (assets versionados)
+
+```bash
+npm install
+npm run build
+```
+
+Salida en `dist/` con:
+- JS/CSS hasheados
+- imágenes/audio/video con nombre versionado
+- `index.html` y `gracies.html` apuntando a los ficheros versionados
 
 ## Base visual usada
 
@@ -39,13 +51,13 @@ Cobertura actual:
 
 ## Deploy en Netlify
 
-Este repo ya incluye configuración en `netlify.toml` para deploy estático.
+Este repo ya incluye configuración en `netlify.toml`.
 
 Pasos en Netlify:
 1. `Add new site` -> `Import an existing project`.
 2. Conecta el repositorio.
-3. Build command: dejar vacío.
-4. Publish directory: `.` (raíz del repo).
+3. Build command: `npm run build`.
+4. Publish directory: `dist`.
 5. Deploy.
 
 Si quieres dominio propio (`elsrainbows.cat`), en `Domain settings` añade el dominio y apunta los DNS según las instrucciones de Netlify.

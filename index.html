@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="ca" data-theme="light">
 <head>
-	<link rel="icon" type="image/webp" href="imatges/favicon.webp">
+	<link rel="icon" type="image/png" href="imatges/favicon.png">
+	<link rel="shortcut icon" href="imatges/favicon.png">
+	<link rel="alternate icon" type="image/webp" href="imatges/favicon.webp">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#111111" />
@@ -10,7 +12,6 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preload" as="image" href="imatges/hero-1.webp" fetchpriority="high" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-  <link rel="stylesheet" href="estils.css" />
 </head>
 
 <body>
@@ -420,6 +421,8 @@ una per dia sense fer terrabastall.<br>
           <p id="contacte-help" class="form-help">* Camp obligatori.</p>
 
           <button type="submit" class="btn">Enviar</button>
+
+          <p class="form-feedback" data-form-feedback role="status" aria-live="polite" hidden></p>
         </form>
       </div>
     </section>
@@ -435,6 +438,5 @@ una per dia sense fer terrabastall.<br>
       <a class="to-top" href="#inici">Tornar amunt ↑</a>
     </div>
   </footer>
-  <script type="module" src="main.mjs"></script>
 </body>
 </html>
