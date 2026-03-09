@@ -69,44 +69,65 @@ export function setupSlideshow({
   return { showSlide, start };
 }
 
+function updateFormFeedback(form, message, isError = false) {
+  const feedback = form.querySelector("[data-form-feedback]");
+  if (!feedback) return;
+
+  feedback.hidden = false;
+  feedback.textContent = message;
+  feedback.classList.toggle("is-error", isError);
+  feedback.classList.toggle("is-success", !isError);
+}
+
+function submitNetlifyForm(form, fetchFn) {
+  if (form.dataset.submitting === "true") return;
+
+  const formData = new FormData(form);
+  form.dataset.submitting = "true";
+
+  fetchFn("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then((response) => {
+      if (response && "ok" in response && !response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      updateFormFeedback(form, "Gracies! Hem rebut el missatge.");
+      form.reset();
+    })
+    .catch(() => {
+      updateFormFeedback(form, "No s'ha pogut enviar. Torna-ho a provar en uns minuts.", true);
+    })
+    .finally(() => {
+      delete form.dataset.submitting;
+    });
+}
+
 export function setupNetlifyAjaxForm(form, { fetchFn = fetch } = {}) {
   if (!form || typeof fetchFn !== "function") return;
 
-  const feedback = form.querySelector("[data-form-feedback]");
-
-  const updateFeedback = (message, isError = false) => {
-    if (!feedback) return;
-
-    feedback.hidden = false;
-    feedback.textContent = message;
-    feedback.classList.toggle("is-error", isError);
-    feedback.classList.toggle("is-success", !isError);
-  };
-
-  const handleSubmit = (event) => {
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
+    submitNetlifyForm(form, fetchFn);
+  });
+}
 
-    const myForm = event.target;
-    const formData = new FormData(myForm);
+export function setupNetlifyAjaxDelegation(doc = document, { fetchFn = fetch } = {}) {
+  if (!doc || typeof fetchFn !== "function") return;
 
-    fetchFn("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-      .then((response) => {
-        if (response && "ok" in response && !response.ok) {
-          throw new Error("Form submission failed");
-        }
-        updateFeedback("Gracies! Hem rebut el missatge.");
-        myForm.reset();
-      })
-      .catch(() => {
-        updateFeedback("No s'ha pogut enviar. Torna-ho a provar en uns minuts.", true);
-      });
-  };
+  doc.addEventListener("submit", (event) => {
+    if (event.defaultPrevented) return;
 
-  form.addEventListener("submit", handleSubmit);
+    const form = event.target;
+    if (!form || typeof form.matches !== "function") return;
+    if (!form.matches("form[data-netlify='true']")) return;
+
+    event.preventDefault();
+    submitNetlifyForm(form, fetchFn);
+  });
 }
 
 export function setFooterYear(yearElement, date = new Date()) {
@@ -132,8 +153,10 @@ export function initPage(doc = document, win = window) {
   const slideshow = setupSlideshow({ slides, dots, prefersReducedMotion });
   slideshow.start();
 
+  const fetchFn = typeof win.fetch === "function" ? win.fetch.bind(win) : null;
   const form = doc.querySelector("form[data-netlify='true']");
-  setupNetlifyAjaxForm(form, { fetchFn: win.fetch?.bind(win) });
+  setupNetlifyAjaxForm(form, { fetchFn });
+  setupNetlifyAjaxDelegation(doc, { fetchFn });
 
   const year = doc.querySelector("#year");
   setFooterYear(year);
