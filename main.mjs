@@ -133,7 +133,10 @@ export function initPage(doc = document, win = window) {
 
   const slides = Array.from(doc.querySelectorAll(".slide"));
   const dots = Array.from(doc.querySelectorAll(".dot"));
-  const prefersReducedMotion = win.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const prefersReducedMotion =
+    typeof win.matchMedia === "function"
+      ? win.matchMedia("(prefers-reduced-motion: reduce)").matches
+      : false;
 
   const slideshow = setupSlideshow({ slides, dots, prefersReducedMotion });
   slideshow.start();
