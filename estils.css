@@ -260,13 +260,14 @@ h1, h2, h3, p, li, summary{
 
 /* Botons base */
 .btn{
-  display: inline-block;
-  padding: .65rem 1rem;
+  background: var(--brand);
   border-radius: 999px;
   border: 1px solid var(--brand);
-  background: var(--brand);
   color: #fff;
+  display: inline-block;
   font-weight: 700;
+  max-width: 10ch;
+  padding: .65rem 1rem;
 }
 .btn:hover{ opacity: .92; }
 
@@ -470,6 +471,51 @@ main > .section{
   padding: 1rem;
 }
 
+.contact-form{
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(255,217,61,.2), rgba(107,197,255,.16));
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.form-field{
+  margin-bottom: .9rem;
+}
+
+.form-field label{
+  display: inline-block;
+  margin-bottom: .35rem;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
+  border: 1px solid rgba(28,31,51,.26);
+  border-radius: 12px;
+  background: rgba(255,255,255,.95);
+}
+
+.contact-form textarea{
+  resize: vertical;
+}
+
+.form-help{
+  margin: .35rem 0 1rem;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.hp-field{
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible,
@@ -540,6 +586,9 @@ video:focus-visible{
 }
 
 @media (max-width: 720px){
+  .btn{
+    max-width: 100%;
+  }
   /* Header mòbil: logo esquerra + botó dreta */
   .nav-toggle{ 
     display: inline-flex; 

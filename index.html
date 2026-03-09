@@ -379,13 +379,48 @@ una per dia sense fer terrabastall.<br>
     <section id="contacte" class="section">
       <div class="wrap">
         <h2>Contacte</h2>
-        <div class="contact-card">
-          <p>
-            <strong>Booking / Premsa:</strong> hola@rainbows.cat<br />
-            <strong>Instagram:</strong> (properament)<br />
+        <form
+          name="contacte-rainbows"
+          method="POST"
+          action="/gracies"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="contact-form"
+        >
+          <input type="hidden" name="form-name" value="contacte-rainbows" />
+
+          <p class="hp-field">
+            <label for="bot-field">No omplis aquest camp si ets una persona</label>
+            <input id="bot-field" name="bot-field" type="text" tabindex="-1" autocomplete="off" />
           </p>
 
-        </div>
+          <div class="form-field">
+            <label for="nom">Nom</label>
+            <input id="nom" name="nom" type="text" autocomplete="name" />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Mail de contacte <span aria-hidden="true">*</span></label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              required
+              aria-describedby="contacte-help"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="comentari">Comentari</label>
+            <textarea id="comentari" name="comentari" rows="5"></textarea>
+          </div>
+
+          <p id="contacte-help" class="form-help">* Camp obligatori.</p>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
       </div>
     </section>
   </main>
