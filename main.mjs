@@ -73,49 +73,40 @@ export function setupNetlifyAjaxForm(form, { fetchFn = fetch } = {}) {
   if (!form || typeof fetchFn !== "function") return;
 
   const feedback = form.querySelector("[data-form-feedback]");
-  const submitButton = form.querySelector("button[type='submit']");
 
-  function updateFeedback(message, isError = false) {
+  const updateFeedback = (message, isError = false) => {
     if (!feedback) return;
 
     feedback.hidden = false;
     feedback.textContent = message;
     feedback.classList.toggle("is-error", isError);
     feedback.classList.toggle("is-success", !isError);
-  }
+  };
 
-  form.addEventListener("submit", async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (form.dataset.submitting === "true") return;
+    const myForm = event.target;
+    const formData = new FormData(myForm);
 
-    form.dataset.submitting = "true";
-    submitButton?.setAttribute("aria-busy", "true");
-    if (submitButton) submitButton.disabled = true;
-
-    const formData = new FormData(form);
-
-    try {
-      const response = await fetchFn("/", {
+    fetchFn("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
+      })
+      .then((response) => {
+        if (response && "ok" in response && !response.ok) {
+          throw new Error("Form submission failed");
+        }
+        updateFeedback("Gracies! Hem rebut el missatge.");
+        myForm.reset();
+      })
+      .catch(() => {
+        updateFeedback("No s'ha pogut enviar. Torna-ho a provar en uns minuts.", true);
       });
+  };
 
-      if (response && "ok" in response && !response.ok) {
-        throw new Error("Form submission failed");
-      }
-
-      updateFeedback("Gracies! Hem rebut el missatge.");
-      form.reset();
-    } catch (_error) {
-      updateFeedback("No s'ha pogut enviar. Torna-ho a provar en uns minuts.", true);
-    } finally {
-      delete form.dataset.submitting;
-      submitButton?.removeAttribute("aria-busy");
-      if (submitButton) submitButton.disabled = false;
-    }
-  });
+  form.addEventListener("submit", handleSubmit);
 }
 
 export function setFooterYear(yearElement, date = new Date()) {
