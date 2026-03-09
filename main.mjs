@@ -123,7 +123,7 @@ export function setupNetlifyAjaxDelegation(doc = document, { fetchFn = fetch } =
 
     const form = event.target;
     if (!form || typeof form.matches !== "function") return;
-    if (!form.matches("form[data-netlify='true']")) return;
+    if (!form.matches("form[data-netlify='true'], form[name='contacte-rainbows']")) return;
 
     event.preventDefault();
     submitNetlifyForm(form, fetchFn);
@@ -154,7 +154,7 @@ export function initPage(doc = document, win = window) {
   slideshow.start();
 
   const fetchFn = typeof win.fetch === "function" ? win.fetch.bind(win) : null;
-  const form = doc.querySelector("form[data-netlify='true']");
+  const form = doc.querySelector("form[data-netlify='true'], form[name='contacte-rainbows']");
   setupNetlifyAjaxForm(form, { fetchFn });
   setupNetlifyAjaxDelegation(doc, { fetchFn });
 

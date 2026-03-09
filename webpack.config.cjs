@@ -56,6 +56,7 @@ module.exports = {
       chunks: ["main"],
       inject: "body",
       scriptLoading: "module",
+      minify: false,
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "gracies.html"),
@@ -63,6 +64,7 @@ module.exports = {
       chunks: ["main"],
       inject: "body",
       scriptLoading: "module",
+      minify: false,
     }),
   ],
   resolve: {
