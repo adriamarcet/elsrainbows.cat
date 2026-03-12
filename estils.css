@@ -528,7 +528,7 @@ main>.section {
   display: grid;
   gap: .75rem;
   left: 50%;
-  padding: 0 1.2rem 1.1rem;
+  padding: .5rem 1.2rem 1.1rem;
   position: fixed;
   transform: translateX(-50%);
   width: min(720px, calc(100% - .5rem));
@@ -782,6 +782,8 @@ main>.section {
   gap: .8rem;
   height: 64px;
   position: relative;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .player-dock__art--mini {
@@ -809,7 +811,37 @@ main>.section {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 220px;
+  max-width: min(42vw, 220px);
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.player-dock__title--mini span {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 2rem;
+  will-change: transform;
+}
+
+.player-dock__title--mini.is-marquee span {
+  animation: marquee-mini 12s linear infinite;
+}
+
+@keyframes marquee-mini {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .player-dock__title--mini.is-marquee span {
+    animation: none;
+  }
 }
 
 .player-dock__mini-controls {
@@ -818,10 +850,15 @@ main>.section {
   gap: .45rem;
   margin-left: auto;
   padding-inline-end: .5rem;
+  flex-shrink: 0;
 }
 
 .player-dock.is-collapsed .player-dock__head {
   display: none;
+}
+
+.player-dock.is-collapsed .player-dock__art {
+  height: 64px;
 }
 
 .player-dock.is-collapsed .player-dock__mini {

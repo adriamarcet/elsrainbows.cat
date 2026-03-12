@@ -195,6 +195,8 @@ export function setupAudioDock(doc = document) {
   }
 
   doc.body?.classList.add("has-player-dock");
+  dock.classList.add("is-collapsed");
+  dock.querySelector(".player-dock__mini")?.setAttribute("aria-hidden", "false");
 
   const titleEls = Array.from(dock.querySelectorAll("[data-audio-title]"));
   const currentTimeEl = dock.querySelector("[data-audio-current]");
@@ -243,6 +245,7 @@ export function setupAudioDock(doc = document) {
 
     titleEls.forEach((node) => {
       node.textContent = entry.title;
+      node.setAttribute("data-title", entry.title);
     });
     updateProgressFromAudio();
     updatePlayingState();
@@ -307,6 +310,7 @@ export function setupAudioDock(doc = document) {
       pauseOtherAudios(audio);
       titleEls.forEach((node) => {
         node.textContent = entry.title;
+        node.setAttribute("data-title", entry.title);
       });
       updatePlayingState();
       updateSongIndicators();
