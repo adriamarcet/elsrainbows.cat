@@ -167,6 +167,250 @@ export function hydrateObfuscatedEmails(doc = document, { atobFn } = {}) {
   });
 }
 
+function formatTime(totalSeconds) {
+  if (!Number.isFinite(totalSeconds) || totalSeconds <= 0) return "0:00";
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = Math.floor(totalSeconds % 60);
+  return `${minutes}:${String(seconds).padStart(2, "0")}`;
+}
+
+export function setupAudioDock(doc = document) {
+  if (!doc || typeof doc.querySelectorAll !== "function") return;
+
+  const dock = doc.querySelector("[data-audio-dock]");
+  if (!dock) return;
+
+  const songNodes = Array.from(doc.querySelectorAll(".song"));
+  const entries = songNodes
+    .map((song) => {
+      const audio = song.querySelector("audio");
+      const title = song.querySelector("h3")?.textContent?.trim() || "Cançó sense títol";
+      return audio ? { song, audio, title } : null;
+    })
+    .filter(Boolean);
+
+  if (entries.length === 0) {
+    dock.hidden = true;
+    return;
+  }
+
+  doc.body?.classList.add("has-player-dock");
+
+  const titleEls = Array.from(dock.querySelectorAll("[data-audio-title]"));
+  const currentTimeEl = dock.querySelector("[data-audio-current]");
+  const durationEl = dock.querySelector("[data-audio-duration]");
+  const progressEl = dock.querySelector("[data-audio-progress]");
+  const playBtns = Array.from(dock.querySelectorAll("[data-audio-play]"));
+  const prevBtns = Array.from(dock.querySelectorAll("[data-audio-prev]"));
+  const nextBtns = Array.from(dock.querySelectorAll("[data-audio-next]"));
+  const listBtn = dock.querySelector("[data-audio-list]");
+  const minimizeBtns = Array.from(dock.querySelectorAll("[data-audio-minimize]"));
+  const closeBtns = Array.from(dock.querySelectorAll("[data-audio-close]"));
+
+  let activeIndex = 0;
+  let activeAudio = entries[0].audio;
+  let isSeeking = false;
+
+  entries.forEach((entry) => {
+    const status = doc.createElement("span");
+    status.className = "song-status";
+    status.textContent = "Reproduint";
+    status.setAttribute("aria-live", "polite");
+    status.setAttribute("aria-hidden", "true");
+    entry.song.querySelector(".song-head")?.appendChild(status);
+    entry.statusEl = status;
+  });
+
+  function pauseOtherAudios(current) {
+    entries.forEach((entry) => {
+      if (entry.audio !== current && !entry.audio.paused) {
+        entry.audio.pause();
+      }
+    });
+  }
+
+  function setActive(index, { autoplay = false } = {}) {
+    const boundedIndex = ((index % entries.length) + entries.length) % entries.length;
+    const entry = entries[boundedIndex];
+    if (!entry) return;
+
+    if (activeAudio && activeAudio !== entry.audio) {
+      activeAudio.pause();
+    }
+
+    activeIndex = boundedIndex;
+    activeAudio = entry.audio;
+
+    titleEls.forEach((node) => {
+      node.textContent = entry.title;
+    });
+    updateProgressFromAudio();
+    updatePlayingState();
+    updateSongIndicators();
+
+    if (autoplay) {
+      activeAudio.play().catch(() => {});
+    }
+  }
+
+  function updateProgressFromAudio() {
+    if (!activeAudio) return;
+    const duration = activeAudio.duration;
+    const current = activeAudio.currentTime || 0;
+
+    if (currentTimeEl) currentTimeEl.textContent = formatTime(current);
+    if (durationEl) durationEl.textContent = duration ? formatTime(duration) : "--:--";
+
+    if (progressEl && !isSeeking) {
+      const ratio = duration ? current / duration : 0;
+      progressEl.value = String(Math.round(ratio * 1000));
+    }
+  }
+
+  function updatePlayingState() {
+    if (!activeAudio) return;
+    const isPlaying = !activeAudio.paused;
+    dock.classList.toggle("is-playing", isPlaying);
+    playBtns.forEach((btn) => {
+      btn.setAttribute("aria-label", isPlaying ? "Pausar cançó" : "Reproduir cançó");
+    });
+  }
+
+  function updateSongIndicators() {
+    entries.forEach((entry) => {
+      const isActive = entry.audio === activeAudio && !activeAudio.paused;
+      entry.song.classList.toggle("is-playing", isActive);
+      if (entry.statusEl) {
+        entry.statusEl.setAttribute("aria-hidden", isActive ? "false" : "true");
+      }
+    });
+  }
+
+  function playNext() {
+    if (entries.length === 0) return;
+    let nextIndex = activeIndex + 1;
+    setActive(nextIndex, { autoplay: true });
+  }
+
+  function playPrev() {
+    if (entries.length === 0) return;
+    let prevIndex = activeIndex - 1;
+    setActive(prevIndex, { autoplay: true });
+  }
+
+  entries.forEach((entry, index) => {
+    const { audio } = entry;
+
+    audio.addEventListener("play", () => {
+      activeAudio = audio;
+      activeIndex = index;
+      pauseOtherAudios(audio);
+      titleEls.forEach((node) => {
+        node.textContent = entry.title;
+      });
+      updatePlayingState();
+      updateSongIndicators();
+      updateProgressFromAudio();
+    });
+
+    audio.addEventListener("pause", () => {
+      if (activeAudio !== audio) return;
+      updatePlayingState();
+      updateSongIndicators();
+    });
+
+    audio.addEventListener("timeupdate", () => {
+      if (activeAudio !== audio) return;
+      updateProgressFromAudio();
+    });
+
+    audio.addEventListener("durationchange", () => {
+      if (activeAudio !== audio) return;
+      updateProgressFromAudio();
+    });
+
+    audio.addEventListener("ended", () => {
+      if (activeAudio !== audio) return;
+      updatePlayingState();
+      updateSongIndicators();
+    });
+  });
+
+  if (playBtns.length) {
+    playBtns.forEach((playBtn) => {
+      playBtn.addEventListener("click", () => {
+        if (!activeAudio) return;
+        if (activeAudio.paused) {
+          activeAudio.play().catch(() => {});
+        } else {
+          activeAudio.pause();
+        }
+      });
+    });
+  }
+
+  if (prevBtns.length) {
+    prevBtns.forEach((prevBtn) => {
+      prevBtn.addEventListener("click", () => playPrev());
+    });
+  }
+
+  if (nextBtns.length) {
+    nextBtns.forEach((nextBtn) => {
+      nextBtn.addEventListener("click", () => playNext());
+    });
+  }
+
+
+  if (progressEl) {
+    progressEl.addEventListener("pointerdown", () => {
+      isSeeking = true;
+    });
+    progressEl.addEventListener("pointerup", () => {
+      isSeeking = false;
+    });
+    progressEl.addEventListener("input", () => {
+      if (!activeAudio || !Number.isFinite(activeAudio.duration)) return;
+      const ratio = Number(progressEl.value) / 1000;
+      activeAudio.currentTime = ratio * activeAudio.duration;
+      updateProgressFromAudio();
+    });
+    progressEl.addEventListener("change", () => {
+      isSeeking = false;
+    });
+  }
+
+  if (listBtn) {
+    listBtn.addEventListener("click", () => {
+      doc.querySelector("#lletres")?.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
+  if (minimizeBtns.length) {
+    minimizeBtns.forEach((minimizeBtn) => {
+      minimizeBtn.addEventListener("click", () => {
+        dock.classList.toggle("is-collapsed");
+        const isCollapsed = dock.classList.contains("is-collapsed");
+        dock.querySelector(".player-dock__mini")?.setAttribute(
+          "aria-hidden",
+          isCollapsed ? "false" : "true",
+        );
+      });
+    });
+  }
+
+  if (closeBtns.length) {
+    closeBtns.forEach((closeBtn) => {
+      closeBtn.addEventListener("click", () => {
+        dock.hidden = true;
+        doc.body?.classList.remove("has-player-dock");
+      });
+    });
+  }
+
+  setActive(0);
+}
+
 export function initPage(doc = document, win = window) {
   const toggle = doc.querySelector(".nav-toggle");
   const menu = doc.querySelector("#menu");
@@ -195,6 +439,8 @@ export function initPage(doc = document, win = window) {
 
   const year = doc.querySelector("#year");
   setFooterYear(year);
+
+  setupAudioDock(doc);
 }
 
 if (typeof window !== "undefined" && typeof document !== "undefined") {
