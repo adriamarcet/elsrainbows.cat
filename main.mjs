@@ -212,6 +212,7 @@ export function setupAudioDock(doc = document) {
   let activeIndex = 0;
   let activeAudio = entries[0].audio;
   let isSeeking = false;
+  let resizeTimer = null;
 
   entries.forEach((entry) => {
     const status = doc.createElement("span");
@@ -279,6 +280,31 @@ export function setupAudioDock(doc = document) {
     });
   }
 
+  function updateMiniMarquee() {
+    const miniTitle = dock.querySelector(".player-dock__title--mini");
+    if (!miniTitle) return;
+    const textSpan = miniTitle.querySelector("[data-audio-title]");
+    if (!textSpan) return;
+
+    miniTitle.classList.remove("is-marquee");
+
+    const probe = doc.createElement("span");
+    probe.textContent = "00000000000000000000";
+    probe.style.position = "absolute";
+    probe.style.visibility = "hidden";
+    probe.style.whiteSpace = "nowrap";
+    miniTitle.appendChild(probe);
+    const twentyChWidth = probe.getBoundingClientRect().width;
+    probe.remove();
+
+    const containerWidth = miniTitle.getBoundingClientRect().width;
+    const textWidth = textSpan.getBoundingClientRect().width;
+
+    if (containerWidth < twentyChWidth && textWidth > containerWidth) {
+      miniTitle.classList.add("is-marquee");
+    }
+  }
+
   function updateSongIndicators() {
     entries.forEach((entry) => {
       const isActive = entry.audio === activeAudio && !activeAudio.paused;
@@ -314,11 +340,13 @@ export function setupAudioDock(doc = document) {
       });
       updatePlayingState();
       updateSongIndicators();
-      updateProgressFromAudio();
+    updateMiniMarquee();
+    updateProgressFromAudio();
     });
 
     audio.addEventListener("pause", () => {
       if (activeAudio !== audio) return;
+      updateMiniMarquee();
       updatePlayingState();
       updateSongIndicators();
     });
@@ -412,7 +440,15 @@ export function setupAudioDock(doc = document) {
     });
   }
 
+  if (typeof window !== "undefined") {
+    window.addEventListener("resize", () => {
+      if (resizeTimer) window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(updateMiniMarquee, 150);
+    });
+  }
+
   setActive(0);
+  updateMiniMarquee();
 }
 
 export function initPage(doc = document, win = window) {
