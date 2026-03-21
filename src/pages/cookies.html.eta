@@ -1,0 +1,36 @@
+<% const content=` 
+  <main id="top" class="section">
+    <div class="wrap" style="max-width: 920px;">
+      <h1>Política de cookies</h1>
+
+      <p>Aquesta web no utilitza cookies pròpies ni de tercers amb finalitats publicitàries o d'analítica.</p>
+
+      <h2>Cookies tècniques</h2>
+      <p>En el moment de redacció d'aquesta pàgina, no s'han detectat cookies tècniques pròpies persistents del lloc.</p>
+
+      <h2>Canvis futurs</h2>
+      <p>Si en el futur s'incorporen serveis que instal·lin cookies no tècniques, s'actualitzarà aquesta política i es demanarà consentiment previ quan sigui exigible.</p>
+
+      <p><a class="btn" href="/">Tornar a l'inici</a></p>
+    </div>
+  </main>
+`; %>
+
+<% const extraMeta=` 
+  <meta name="googlebot" content="noindex, nofollow, noai, noimageai" />
+  <meta name="bingbot" content="noindex, nofollow, noai, noimageai" />
+  <meta name="GPTBot" content="noindex, nofollow, noai, noimageai" />
+  <meta name="ChatGPT-User" content="noindex, nofollow, noai, noimageai" />
+  <meta name="ClaudeBot" content="noindex, nofollow, noai, noimageai" />
+  <meta name="PerplexityBot" content="noindex, nofollow, noai, noimageai" />
+`; %>
+
+<%~ include("layouts/base.html.eta", 
+  { 
+    title: "Política de cookies | Rainbows" ,
+    description: "Política de cookies de la web Rainbows." , 
+    robots: "noindex, nofollow, noai, noimageai" , 
+    content,
+    extraMeta
+  }
+) %>

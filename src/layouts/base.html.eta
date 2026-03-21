@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ca" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111111" />
+  <title><%= it.title %></title>
+  <meta name="description" content="<%= it.description %>" />
+
+  <% if (it.robots) { %>
+    <meta name="robots" content="<%= it.robots %>" />
+  <% } %>
+
+  <% if (it.extraMeta) { %>
+    <%~ it.extraMeta %>
+  <% } %>
+
+  <link rel="icon" type="image/png" href="@img/favicon.png">
+  <link rel="shortcut icon" href="@img/favicon.png">
+  <link rel="alternate icon" type="image/webp" href="@img/favicon.webp">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link href="@styles/estils.css" rel="stylesheet">
+</head>
+<body>
+  <%~ it.content %>
+  <%~ include("/partials/footer.html.eta") %>
+  <script src="@scripts/main.mjs" defer></script>
+</body>
+</html>

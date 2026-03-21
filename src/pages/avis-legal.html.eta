@@ -1,0 +1,43 @@
+<% const content=` 
+  <main id="top" class="section">
+    <div class="wrap" style="max-width: 920px;">
+      <h1>Avís legal</h1>
+      <p>Aquesta web és informativa i mostra contingut musical del projecte Rainbows.</p>
+
+      <h2>Dades del titular</h2>
+      <p>
+        Titular: <strong>Adrià Marcet</strong><br />
+        NIF/CIF: <strong>47773720Y</strong><br />
+        Adreça: <strong>c/ del Segle XX 75, Barcelona</strong><br />
+        Correu de contacte:
+        <strong>
+          <a href="#" data-email-b64="aG9sYUBlbHNyYWluYm93cy5jYXQ=">[mostra correu]</a>
+        </strong>
+      </p>
+
+      <h2>Condicions d'ús</h2>
+      <p>L'accés i l'ús d'aquesta web impliquen l'acceptació de les condicions d'aquest avís legal.</p>
+
+      <p><a class="btn" href="/">Tornar a l'inici</a></p>
+    </div>
+  </main>
+  `;
+  %>
+
+  <% const extraMeta=` 
+    <meta name="googlebot" content="noindex, nofollow, noai, noimageai" />
+    <meta name="bingbot" content="noindex, nofollow, noai, noimageai" />
+    <meta name="GPTBot" content="noindex, nofollow, noai, noimageai" />
+    <meta name="ChatGPT-User" content="noindex, nofollow, noai, noimageai" />
+    <meta name="ClaudeBot" content="noindex, nofollow, noai, noimageai" />
+    <meta name="PerplexityBot" content="noindex, nofollow, noai, noimageai" />
+  `;
+  %>
+
+  <%~ include("layouts/base.html.eta", {
+    title: "Avís Legal | Rainbows",
+    description: "Avís legal de la web Rainbows.",
+    robots: "noindex, nofollow, noai, noimageai",
+    content,
+    extraMeta
+  }) %>

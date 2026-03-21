@@ -1,0 +1,16 @@
+<div class="footer-logo-wrap" aria-hidden="true">
+  <img class="footer-logo" src="@img/Rainbows_logo_complet.webp" alt="" width="2166" height="337" loading="lazy"
+    decoding="async" />
+</div>
+
+<footer class="site-footer">
+    <div class="wrap footer-inner">
+      <small>© <span id="year"></span> Rainbows</small>
+      <nav class="footer-legal" aria-label="Enllaços legals">
+        <a href="/avis-legal.html">Avís legal</a>
+        <a href="/privacitat.html">Privacitat</a>
+        <a href="/cookies.html">Cookies</a>
+      </nav>
+      <a class="to-top" href="#inici">Tornar amunt ↑</a>
+    </div>
+</footer>

@@ -2,46 +2,20 @@
 <html lang="ca" data-theme="light">
 
 <head>
-  <link rel="icon" type="image/png" href="imatges/favicon.png">
-  <link rel="shortcut icon" href="imatges/favicon.png">
-  <link rel="alternate icon" type="image/webp" href="imatges/favicon.webp">
+  <link rel="icon" type="image/png" href="@img/favicon.png">
+  <link rel="shortcut icon" href="@img/favicon.png">
+  <link rel="alternate icon" type="image/webp" href="@img/favicon.webp">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#111111" />
   <title>Rainbows</title>
   <meta name="description" content="Web oficial del grup Rainbows." />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-  <link rel="preload" as="image" href="imatges/hero-1.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="@img/hero-1.webp" fetchpriority="high" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
 </head>
 
 <body>
-  <!-- Capçalera estreta -->
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#inici" aria-label="Anar a l'inici">
-        <img class="brand-logo" src="imatges/R_perfil_fons_transp.webp" alt="R de Rainbows" width="1080" height="1080"
-          decoding="async" fetchpriority="high" />
-        <span class="sr-only">Rainbows</span>
-      </a>
-
-      <nav class="nav" aria-label="Menú principal">
-        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu"
-          aria-label="Obrir o tancar menú principal">
-          Menú
-        </button>
-
-        <ul id="menu" class="nav-list">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#lletres">Lletres i àudios</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#videos">Vídeos</a></li>
-          <li><a href="#contacte">Contacte</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
   <main id="inici" class="main">
     <!-- HERO amb slideshow -->
     <section class="hero" aria-label="Presentació">
@@ -54,11 +28,11 @@
           </div>
         </div>
 
-        <img class="slide is-active" src="imatges/hero-1.webp" alt="Rainbows en directe 1" width="1600" height="613"
+        <img class="slide is-active" src="@img/hero-1.webp" alt="Rainbows en directe 1" width="1600" height="613"
           decoding="async" fetchpriority="high" />
-        <img class="slide" src="imatges/hero-2.webp" alt="Rainbows en directe 2" width="1600" height="613"
+        <img class="slide" src="@img/hero-2.webp" alt="Rainbows en directe 2" width="1600" height="613"
           decoding="async" loading="lazy" />
-        <img class="slide" src="imatges/hero-3.webp" alt="Assaig del grup" width="1600" height="613" decoding="async"
+        <img class="slide" src="@img/hero-3.webp" alt="Assaig del grup" width="1600" height="613" decoding="async"
           loading="lazy" />
 
         <div class="slider-dots" aria-hidden="true">
@@ -108,7 +82,7 @@
           <article class="song">
             <header class="song-head">
               <h3>Arc is life</h3>
-              <audio controls preload="none" src="audios/Arc_is_life.mp3">
+              <audio controls preload="none" src="@audio/Arc_is_life.mp3">
                 El teu navegador no suporta l'element d'àudio.
               </audio>
             </header>
@@ -165,7 +139,7 @@
           <article class="song">
             <header class="song-head">
               <h3>Bella ciao</h3>
-              <audio controls preload="none" src="audios/Bella_ciao.mp3"></audio>
+              <audio controls preload="none" src="@audio/Bella_ciao.mp3"></audio>
             </header>
 
             <details class="lyrics">
@@ -194,7 +168,7 @@
           <article class="song">
             <header class="song-head">
               <h3>Excel</h3>
-              <audio controls preload="none" src="audios/Excel.mp3"></audio>
+              <audio controls preload="none" src="@audio/Excel.mp3"></audio>
             </header>
 
             <details class="lyrics">
@@ -242,7 +216,7 @@
           <article class="song">
             <header class="song-head">
               <h3>Golden</h3>
-              <audio controls preload="none" src="audios/Golden.mp3"></audio>
+              <audio controls preload="none" src="@audio/Golden.mp3"></audio>
             </header>
 
             <details class="lyrics">
@@ -305,7 +279,7 @@
           <article class="song">
             <header class="song-head">
               <h3>Monstre de Banyoles</h3>
-              <audio controls preload="none" src="audios/Monstre_de_Banyoles.mp3"></audio>
+              <audio controls preload="none" src="@audio/Monstre_de_Banyoles.mp3"></audio>
             </header>
 
             <details class="lyrics">
@@ -351,27 +325,27 @@
 
         <div class="grid gallery">
           <figure>
-            <img src="imatges/galeria-1.webp" alt="Foto del grup 1" loading="lazy" decoding="async" width="1000"
+            <img src="@img/galeria-1.webp" alt="Foto del grup 1" loading="lazy" decoding="async" width="1000"
               height="750" />
           </figure>
           <figure>
-            <img src="imatges/galeria-2.webp" alt="Foto del grup 2" loading="lazy" decoding="async" width="1000"
+            <img src="@img/galeria-2.webp" alt="Foto del grup 2" loading="lazy" decoding="async" width="1000"
               height="750" />
           </figure>
           <figure>
-            <img src="imatges/galeria-3.webp" alt="Foto del grup 3" loading="lazy" decoding="async" width="1000"
+            <img src="@img/galeria-3.webp" alt="Foto del grup 3" loading="lazy" decoding="async" width="1000"
               height="750" />
           </figure>
           <figure>
-            <img src="imatges/galeria-4.webp" alt="Foto del grup 4" loading="lazy" decoding="async" width="1000"
+            <img src="@img/galeria-4.webp" alt="Foto del grup 4" loading="lazy" decoding="async" width="1000"
               height="750" />
           </figure>
           <figure>
-            <img src="imatges/galeria-5.webp" alt="Foto del grup 5" loading="lazy" decoding="async" width="1000"
+            <img src="@img/galeria-5.webp" alt="Foto del grup 5" loading="lazy" decoding="async" width="1000"
               height="750" />
           </figure>
           <figure>
-            <img src="imatges/galeria-6.webp" alt="Foto del grup 6" loading="lazy" decoding="async" width="1000"
+            <img src="@img/galeria-6.webp" alt="Foto del grup 6" loading="lazy" decoding="async" width="1000"
               height="750" />
           </figure>
         </div>
@@ -384,8 +358,8 @@
         <h2>Vídeos</h2>
 
         <div class="grid videos">
-          <video controls preload="metadata" src="videos/video-1.mp4"></video>
-          <video controls preload="metadata" src="videos/video-2.mp4"></video>
+          <video controls preload="metadata"src="@video/video-1.mp4"></video>
+          <video controls preload="metadata"src="@video/video-2.mp4"></video>
         </div>
       </div>
     </section>
@@ -562,22 +536,10 @@
     </div>
   </section>
 
-  <div class="footer-logo-wrap" aria-hidden="true">
-    <img class="footer-logo" src="imatges/Rainbows_logo_complet.webp" alt="" width="2166" height="337" loading="lazy"
-      decoding="async" />
-  </div>
+  <%~ include("partials/footer.html.eta") %>
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <small>© <span id="year"></span> Rainbows</small>
-      <nav class="footer-legal" aria-label="Enllaços legals">
-        <a href="/aviso-legal.html">Avís legal</a>
-        <a href="/privacidad.html">Privacitat</a>
-        <a href="/cookies.html">Cookies</a>
-      </nav>
-      <a class="to-top" href="#inici">Tornar amunt ↑</a>
-    </div>
-  </footer>
+  <link href="@styles/estils.css" rel="stylesheet">
+  <script src="@scripts/main.mjs" defer></script>
 </body>
 
 </html>

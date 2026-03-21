@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.eta": "html",
+        "*.html.eta": "html"
+    }
+}

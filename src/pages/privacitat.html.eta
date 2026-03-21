@@ -1,0 +1,61 @@
+<% const content=` 
+  <main id="top" class="section">
+    <div class="wrap" style="max-width: 920px;">
+      <h1>Política de privacitat</h1>
+      <p>Mitjançant el formulari de contacte es recullen les dades mínimes necessàries per respondre consultes.</p>
+
+      <h2>Responsable del tractament</h2>
+      <p>
+        Responsable: <strong>Adrià Marcet</strong><br />
+        Correu de contacte:
+        <strong>
+          <a href="#" data-email-b64="aG9sYUBlbHNyYWluYm93cy5jYXQ=">[mostra correu]</a>
+        </strong>
+      </p>
+
+      <h2>Dades tractades</h2>
+      <ul>
+        <li>Nom (opcional)</li>
+        <li>Correu electrònic (obligatori)</li>
+        <li>Comentari (opcional)</li>
+      </ul>
+
+      <h2>Finalitat i base legal</h2>
+      <p>La finalitat és gestionar i respondre la consulta enviada. La base legal és el consentiment de la persona
+        usuària en enviar el formulari.</p>
+
+      <h2>Conservació</h2>
+      <p>Les dades es conservaran el temps necessari per gestionar la consulta i durant els terminis legals aplicables.
+      </p>
+
+      <h2>Destinataris</h2>
+      <p>Les dades del formulari es processen mitjançant Netlify Forms, com a proveïdor tècnic del servei.</p>
+
+      <h2>Drets</h2>
+      <p>Pots sol·licitar accés, rectificació, supressió, oposició, limitació i portabilitat escrivint al correu de
+        contacte del responsable.</p>
+
+      <p><a class="btn" href="/">Tornar a l'inici</a></p>
+    </div>
+  </main>
+  `;
+  %>
+
+<% const extraMeta=` 
+  <meta name="googlebot" content="noindex, nofollow, noai, noimageai" />
+  <meta name="bingbot" content="noindex, nofollow, noai, noimageai" />
+  <meta name="GPTBot" content="noindex, nofollow, noai, noimageai" />
+  <meta name="ChatGPT-User" content="noindex, nofollow, noai, noimageai" />
+  <meta name="ClaudeBot" content="noindex, nofollow, noai, noimageai" />
+  <meta name="PerplexityBot" content="noindex, nofollow, noai, noimageai" />
+`; %>
+
+<%~ include("layouts/base.html.eta", 
+  { 
+    title: "Política de privacitat | Rainbows" ,
+    description: "Política de privacitat de la web Rainbows." , 
+    robots: "noindex, nofollow, noai, noimageai" , 
+    content,
+    extraMeta
+  }
+) %>

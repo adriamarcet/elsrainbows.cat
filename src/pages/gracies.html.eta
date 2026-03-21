@@ -12,31 +12,21 @@
   <meta name="ChatGPT-User" content="noindex, nofollow, noarchive, nosnippet, noai, noimageai" />
   <meta name="ClaudeBot" content="noindex, nofollow, noarchive, nosnippet, noai, noimageai" />
   <meta name="PerplexityBot" content="noindex, nofollow, noarchive, nosnippet, noai, noimageai" />
-  <link rel="icon" type="image/png" href="imatges/favicon.png">
-  <link rel="shortcut icon" href="imatges/favicon.png">
-  <link rel="alternate icon" type="image/webp" href="imatges/favicon.webp">
+  <link rel="icon" type="image/png" href="@img/favicon.png">
+  <link rel="shortcut icon" href="@img/favicon.png">
+  <link rel="alternate icon" type="image/webp" href="@img/favicon.webp">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
 </head>
 <body>
   <main id="top" class="section">
     <div class="wrap" style="max-width: 720px; text-align: center;">
-      <img src="imatges/R_perfil_fons_transp.webp" alt="R de Rainbows" width="120" height="120" style="margin: 0 auto 1rem;" />
+      <img src="@img/R_perfil_fons_transp.webp" alt="R de Rainbows" width="120" height="120" style="margin: 0 auto 1rem;" />
       <h1 style="margin-bottom: .5rem;">Gracies pel teu missatge</h1>
       <p>Ens posarem en contacte amb tu aviat.</p>
       <p style="margin-top: 1.2rem;"><a class="btn" href="/">Tornar a la web</a></p>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <small>© <span id="year"></span> Rainbows</small>
-      <nav class="footer-legal" aria-label="Enllaços legals">
-        <a href="/aviso-legal.html">Avís legal</a>
-        <a href="/privacidad.html">Privacitat</a>
-        <a href="/cookies.html">Cookies</a>
-      </nav>
-      <a class="to-top" href="#top">Tornar amunt ↑</a>
-    </div>
-  </footer>
+  <%~ include("partials/footer.html.eta") %>
 </body>
 </html>
