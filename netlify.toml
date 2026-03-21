@@ -25,3 +25,13 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/aviso-legal.html"
+  to = "/avis-legal.html"
+  status = 301
+
+[[redirects]]
+  from = "/privacidad.html"
+  to = "/privacitat.html"
+  status = 301
