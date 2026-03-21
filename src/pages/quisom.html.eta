@@ -10,559 +10,105 @@
   <meta name="theme-color" content="#111111" />
   <title>Rainbows</title>
   <meta name="description" content="Web oficial del grup Rainbows." />
+  <meta name="robots" content="noindex, nofollow" />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preload" as="image" href="@img/hero-1.webp" fetchpriority="high" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="@styles/quisom.css" />
+  <script src="@scripts/quisom.mjs" defer></script>
 </head>
 
 <body>
-  <!-- Capçalera estreta -->
   <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#inici" aria-label="Anar a l'inici">
-        <img class="brand-logo" src="@img/R_perfil_fons_transp.webp" alt="R de Rainbows" width="1080" height="1080"
-          decoding="async" fetchpriority="high" />
-        <span class="sr-only">Rainbows</span>
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Anar a l'inici">
+        <img class="brand-logo" src="@img/R_perfil_fons_transp.webp" alt="R de Rainbows" width="1080" height="1080" decoding="async" fetchpriority="high" />
       </a>
-
-      <nav class="nav" aria-label="Menú principal">
-        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu"
-          aria-label="Obrir o tancar menú principal">
-          Menú
-        </button>
-
-        <ul id="menu" class="nav-list">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#lletres">Lletres i àudios</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#videos">Vídeos</a></li>
-          <li><a href="#contacte">Contacte</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
+  <main id="inici" class="main quisom">
+    <div class="container" style="padding-top: 10vh; padding-bottom: 20vh; z-index: 2; position: relative;">
+      <hgroup style="text-align: center; margin-bottom: 3rem;">
+        <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Qui som Els Rainbows</h1>
+        <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto; color: var(--pico-h2-color);">El projecte <strong>Els Rainbows</strong> neix el juny de 2025 amb la il·lusió de formar una banda de música integrada per pares i mares de l’escola.</p>
+      </hgroup>
+      
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 4rem auto; font-size: 1.1rem;">L'objectiu principal del grup és posar ritme a les festes i esdeveniments organitzats des de l’AFA, creant un espai musical comunitari. La banda nucli està formada per cinc membres amb experiència musical prèvia: la <strong>Marina</strong> (veu i guitarra), en <strong>Bertran</strong> (veu i teclat), l'<strong>Adrià</strong> (guitarra i baix), en <strong>Pep</strong> (guitarra) i en <strong>Xavi</strong> (bateria).</p>
 
-  <main id="inici" class="main">
-    <!-- HERO amb slideshow -->
-    <section class="hero" aria-label="Presentació">
-      <div class="hero-slider" aria-label="Slideshow de fotos">
-        <div class="hero-copy">
-          <h1>Viu l'experiència Rainbows</h1>
-          <p>Cançons, energia i comunitat per a infants i famílies.</p>
-          <div class="hero-actions">
-            <a class="btn btn-pill" href="#sobre">Comença aquí</a>
-          </div>
-        </div>
-
-        <img class="slide is-active" src="@img/hero-1.webp" alt="Rainbows en directe 1" width="1600" height="613"
-          decoding="async" fetchpriority="high" />
-        <img class="slide" src="@img/hero-2.webp" alt="Rainbows en directe 2" width="1600" height="613"
-          decoding="async" loading="lazy" />
-        <img class="slide" src="@img/hero-3.webp" alt="Assaig del grup" width="1600" height="613" decoding="async"
-          loading="lazy" />
-
-        <div class="slider-dots" aria-hidden="true">
-          <span class="dot is-active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-
-        <a class="scroll-down" href="#sobre" aria-label="Baixar al següent contingut">
-          <span aria-hidden="true">↓</span>
-        </a>
+      <div class="grid" style="align-items: stretch;">
+        <article>
+          <header style="text-align: center; background-color: var(--pico-card-background-color);">
+            <h2 style="font-size: 1.5rem; margin-bottom: 0;">Col·laboracions infantils</h2>
+          </header>
+          <p>Una de les fites més engrescadores del projecte és la voluntat de convidar nens i nenes a realitzar col·laboracions esporàdiques. Per tal d'assegurar una experiència enriquidora i amb garanties en aquesta etapa inicial, les col·laboracions s'obren a infants amb coneixements musicals bàsics que ja formen part de l'entorn del grup. El funcionament és pràctic: l'infant s'incorpora als assajos durant dues o tres sessions per preparar un tema concret i, finalment, l'interpreta en directe en un esdeveniment específic.</p>
+        </article>
+        <article>
+          <header style="text-align: center; background-color: var(--pico-card-background-color);">
+            <h2 style="font-size: 1.5rem; margin-bottom: 0;">Valors i experiència</h2>
+          </header>
+          <p>L'aposta dels Rainbows és anar obrint el projecte progressivament a tots els infants que hi vulguin participar. Més enllà de la interpretació, volem que els nens i nenes visquin tot el procés de preparació, posant en valor el <strong>compromís</strong>, el <strong>respecte per la música</strong> i el sentiment de <strong>treball en equip</strong>. Tot plegat, amb la finalitat última de gaudir al màxim de l'experiència, tant a la sala d'assaig com a sobre de l'escenari.</p>
+        </article>
       </div>
-    </section>
+    </div>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="section">
-      <div class="wrap">
-        <h2>Sobre el grup</h2>
-        <div class="two-col">
-          <p>
-            Rainbows neix al juny del 2025 amb la idea de formar una banda de música de pares i mares de l'escola Arc
-            Iris que toqui a les diferents festes i esdeveniments organitzats per l'AFA.
-
-            La banda està formada per cinc persones: la Marina a la veu, l'Adrià a la guitarra i baix, en Pep a la
-            guitarra, en Xavi a la bateria i en Bertran al teclat. Tots ells tenen experiència en el món musical. Aqui
-            podràs escoltar, llegeix les lletres i mirar els vídeos.
-          </p>
-          <div class="facts">
-            <ul>
-              <li><strong>Estil:</strong> Pop / Rock / Versions infantils i 80's</li>
-              <li><strong>Origen:</strong> Escola Arc Iris del Guinardó, Barcelona</li>
-              <li><strong>Contacte:</strong> <a href="mailto:hola@elsrainbows.cat">hola@elsrainbows.cat</a></li>
-            </ul>
-          </div>
+    <section id="marina" class="section section--marina">
+      <div class="container">
+        <h2>Marina</h2>
+        <div>
+          <p><strong>Veus i guitarra</strong></p>
+          <p>Amb la veu, la guitarra i el kazoo com a eines d'expressió, la trajectòria de l'artista de projectes com <strong>Mare de segon</strong> i <strong>Galàxies</strong> s'ha forjat a través d'una vida íntimament lligada a la música. El seu referent principal és <strong>El Kanka</strong>, però la seva base musical neix a casa: el seu pare, també cantant i guitarrista, va ser qui li va transmetre la passió i els primers coneixements des de ben petita. Als 8 anys, aquesta vocació es va professionalitzar amb estudis de <strong>solfeig, cant i guitarra</strong>.</p>
+          <p>Al llarg de la seva carrera laboral, ha demostrat una gran versatilitat: des de girar per Mèxic amb la companyia de dansa contemporània <strong>Lanonima Imperial</strong> fins a cantar durant anys a l’orquestra <strong>Dia i nit</strong>, passant per la gravació de veus per a anuncis de televisió i joguines. Tot i aquest bagatge professional, sempre ha entès la música com una forma de diversió i llibertat, guardant un afecte especial per projectes com el grup de rumba <strong>Rachola</strong> i el canal de YouTube <a href="https://www.youtube.com/@lapeceramarinera" target="_blank" rel="noopener"><strong>La Pecera Marinera</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a>. Com a cantautora, ha compost temes propis tant per a les seves formacions com per a col·laboracions externes, entre elles <strong>Les Tirititrans</strong>.</p>
+          <p>En l'etapa adulta, la seva visió de la música va fer un gir cap a la vessant terapèutica en cursar el <strong>màster de musicoteràpia a la Universitat de Barcelona (UB)</strong>, una disciplina que actualment compagina amb la seva faceta artística. Avui dia, manté viva la flama de l'espectacle a través del <strong>teatre musical familiar a Can Clariana</strong>, una activitat que gaudeix profundament compartint escenari i moments amb la seva filla i la seva mare.</p>
         </div>
       </div>
     </section>
-
-    <!-- LLETRES + AUDIOS -->
-    <section id="lletres" class="section section-alt">
-      <div class="wrap">
-        <h2>Lletres i àudios</h2>
-
-
-        <div class="songs">
-          <!-- CANÇÓ 1 -->
-          <article class="song">
-            <header class="song-head">
-              <h3>Arc is life</h3>
-              <audio controls preload="none" src="@audio/Arc_is_life.mp3">
-                El teu navegador no suporta l'element d'àudio.
-              </audio>
-            </header>
-
-            <details class="lyrics">
-              <summary>Veure lletra</summary>
-              <div class="lyrics-body">
-                <p>
-                  Na-na-na-na-na (hey)<br>
-                  Na-na-na-na-na (all together now)<br>
-                  Na-na-na-na-na (ooh)
-                  Na-na-na-na-na<br>
-                  Live (na-na-na-na-na)<br>
-                  Arc is life (na-na-na-na-na)<br>
-                  La ba dab dab dab life (na-na-na-na-na)<br>
-                  Arc iris life (na-na-na-na-na)<br>
-                  Si camines per l’Arc iris<br>
-                  tortugues trobaràs<br>
-                  l’escola és un univers on sempre podràs jugar<br>
-                  hi ha GALAXIES i PLANETES i AURORES BOREALS<br>
-                  pasaràs de pati en pati<br>
-                  de les escales no te'n lliuraràs.<br>
-                  Arc it's life (na-na-na-na-na)<br>
-                  Arc is life (na-na-na-na-na)<br>
-                  Arc is life (na-na-na-na-na)<br>
-                  La ba dab dab dab life (na-na-na-na-na)<br>
-                  Arc is life, l’hort ens agrada cuidar<br>
-                  Arc is life, i treure el gegant Martí a passejar<br>
-                  Arc is life, tenim un poder especial<br>
-                  arc is life, de colors estem envoltats<br>
-                  Si camines per l’Arc iris<br>
-                  tortugues trobaràs<br>
-                  l’escola és un univers on sempre podràs jugar<br>
-                  hi ha FULLES i MIMOSES i també METEORITS<br>
-                  passaràs de pati en pati<br>
-                  de les escales no te’n lliuraràs.<br>
-                  And it's life (na-na-na-na-na)<br>
-                  Arc is life (na-na-na-na-na)<br>
-                  La ba dab dab dab life (na-na-na-na-na)<br>
-                  Arc is life (na-na-na-na-na)<br>
-                  Si camines per l’Arc iris<br>
-                  tortugues trobaràs<br>
-                  l’escola és un univers on sempre podràs jugar<br>
-                  Hi ha PEIXOS i SALAMANDRES i també VOLCANS<br>
-                  Units ho donem tot<br>
-                  Aquesta escola és fenomenal...<br>
-                  Arc iris life!<br>
-                </p>
-              </div>
-            </details>
-          </article>
-
-          <!-- CANÇÓ 2 -->
-          <article class="song">
-            <header class="song-head">
-              <h3>Bella ciao</h3>
-              <audio controls preload="none" src="@audio/Bella_ciao.mp3"></audio>
-            </header>
-
-            <details class="lyrics">
-              <summary>Veure lletra</summary>
-              <div class="lyrics-body">
-                <p>M'he alçat ben d'hora, de matinada, <br>
-                  Oh bella ciao, bella ciao, bella ciao, ciao, ciao!<br>
-                  M'he alçat ben d'hora, de matinada, <br>
-                  per cantar la llibertat.<br><br>
-
-                  Porta’m on vagis, amiga meva, <br>
-                  Oh bella ciao, bella ciao, bella ciao, ciao, ciao!<br>
-                  Porta’m on vagis, amiga meva, <br>
-                  juntes defensem la pau.<br><br>
-
-                  Cantem juntes amb alegria, <br>
-                  Oh bella ciao, bella ciao, bella ciao, ciao, ciao!<br>
-                  Cantem juntes amb alegria, <br>
-                  Viure en so-li-da-ri-tat!<br>
-                </p>
-              </div>
-            </details>
-          </article>
-
-          <!-- CANÇÓ 3 -->
-          <article class="song">
-            <header class="song-head">
-              <h3>Excel</h3>
-              <audio controls preload="none" src="@audio/Excel.mp3"></audio>
-            </header>
-
-            <details class="lyrics">
-              <summary>Veure lletra</summary>
-              <div class="lyrics-body">
-                <p>
-
-                  Benvinguts a la meva vida<br>
-                  que està dintre d’aquest recuadre.<br>
-                  Benvingudes a la meva vida<br>
-                  d’esdeveniments i dates.<br>
-                  Organitzada al milímetre<br>
-                  entre l’excel i el Google Calendar<br>
-                  Welcome a la meva vida. <br><br>
-
-                  I quan de sobte puc improvitzar<br>
-                  estic perduda, tot ho vull abarcar<br>
-                  i quan de sobte toca el freestyle<br>
-                  vec una llum<br>
-                  i torno a ser jo al final<br>
-
-                  (CHORUS) <br>
-
-                  Si t’explico fil per randa<br>
-                  el meu dia no s’acaba<br>
-                  si afegeixes algun acte<br>
-                  puc sortir escaldada<br>
-
-                  A tot vull arribar <br>
-                  però el cap i el cos volen parar<br>
-                  Així que per fi respiro<br>
-                  M’he d’escoltar…<br>
-                  m’he d’escoltar… <br><br>
-
-                  (Tornada) <br>
-
-                  Benvinguts a la meva vida<br>
-                  que està dintre d’aquest <br>
-                  recuadre.
-                </p>
-              </div>
-            </details>
-          </article>
-          <!-- CANÇÓ 4 -->
-          <article class="song">
-            <header class="song-head">
-              <h3>Golden</h3>
-              <audio controls preload="none" src="@audio/Golden.mp3"></audio>
-            </header>
-
-            <details class="lyrics">
-              <summary>Veure lletra</summary>
-              <div class="lyrics-body">
-                <p>Tot era fred, tot era fosc, AH<br>
-                  Perquè creix, AH al meu cor <br>
-                  AAAH<br>
-                  Si tu m’encens, em fas brillar, AH<br>
-                  Ja mai no em faran dubtar<br>
-                  I que no em fa por, ara se qui soc<br>
-                  El meu camí ja està escrit<br>
-                  Res em pot frenar, S’ha acabat dubtar<br>
-                  Torno a brillar com abans (COR)<br>
-                  Per cridar, fort:<br>
-                  Ja no m’amago<br>
-                  Ara brillo<br>
-                  Per això sóc aquí<br>
-                  Puc somiar-ho<br>
-                  Puc sentir-ho<br>
-                  Crec en mi<br>
-                  Pujo a dalt de <br>
-                  Tot,tot, tot<br>
-                  Toco la glòria<br>
-                  He vingut per fer historia<br>
-                  Brillo quan sento l’eufòria<br>
-                  Ohhhhh<br>
-                  Sóc, sóc, sóc<br>
-                  Indestructible<br>
-                  Sento que tot és possible<br>
-                  La veu em fa sentir invencible<br>
-                  Ja no m’amago <br>
-                  Ara brillo<br>
-                  Escric el meu destí<br>
-                  No tinc por, no puc mentir<br>
-                  Vaig néixer per ser així<br>
-                  SOLO<br>
-                  Pujo a dalt de <br>
-                  Tot,tot, tot<br>
-                  Toco la glòria<br>
-                  He vingut per fer historia<br>
-                  Brillo quan sento l’eufòria<br>
-                  Ohhhhh<br>
-                  Sóc, sóc, sóc<br>
-                  Indestructible<br>
-                  Sento que tot es possible<br>
-                  La veu em fa sentir invencible<br>
-                  Ja no m’amago <br>
-                  Ara brillo<br>
-                  Escric el meu destí<br>
-                  No tinc por, no puc mentir<br>
-                  Vaig néixer per ser així<br>
-
-                </p>
-              </div>
-            </details>
-          </article>
-
-          <!-- CANÇÓ 3 -->
-          <article class="song">
-            <header class="song-head">
-              <h3>Monstre de Banyoles</h3>
-              <audio controls preload="none" src="@audio/Monstre_de_Banyoles.mp3"></audio>
-            </header>
-
-            <details class="lyrics">
-              <summary>Veure lletra</summary>
-              <div class="lyrics-body">
-                <p>
-                  Ens ho diu la història d’un vell poble<br>
-                  que hi habitava un monstre, fa molts anys,<br>
-                  diuen que treia foc per les orelles<br>
-                  i per la boca, pel nas i pels queixals.<br>
-                  És el mon, mon, el monstre de Banyoles<br>
-                  que men, men, men, que menjava persones. Oh i tant!<br>
-                  És el mon, mon, el monstre de Banyoles,<br>
-                  una per dia sense fer terrabastall.<br>
-                  Com veureu tenia tanta gana<br>
-                  que s’empassava els bous de tres en tres<br>
-                  i els cavallers, que amb ell volien brega,<br>
-                  se’ls endrapava com qui no menja res.<br>
-                  És el mon, mon, el monstre de Banyoles<br>
-                  que men, men, men, que menjava persones. Oh i tant!<br>
-                  És el mon, mon, el monstre de Banyoles,<br>
-                  una per dia sense fer terrabastall.<br>
-                  I la gent de tota la contrada un tracte,<br>
-                  amb gràcia, amb ell varen signar,<br>
-                  donant-li cols, patates i albergínies<br>
-                  perquè aquell monstre es tornés vegetarià.<br>
-                  És el mon, mon, el monstre de Banyoles<br>
-                  que men, men, men, que menjava persones. Oh i tant!<br>
-                  És el mon, mon, el monstre de Banyoles,<br>
-                  una per dia sense fer terrabastall.<br>
-                </p>
-              </div>
-            </details>
-          </article>
+    <section id="bertran" class="section section--bertran">
+      <div class="container">
+        <h2>Bertran</h2>
+        <div>
+          <p><strong>Teclats i sintetitzadors</strong></p>
+          <p>Actualment vinculat al projecte <strong>Aurores Boreals</strong>, aquest entusiasta de la música defineix el seu perfil a través dels <strong>teclats i el kazoo</strong>. La seva trajectòria va començar en la joventut com a guitarrista elèctric en diverses bandes de rock, evolucionant posteriorment cap a l'exploració de la música electrònica i les arts visuals. Amb aquesta faceta més tecnològica, ha arribat a actuar en escenaris de referència com el <strong>Sónar</strong> o <strong>ArtFutura</strong>.</p>
+          <p>Amb una base principalment autodidacta reforçada amb classes de piano, la seva passió per la sonoritat l'ha portat a la construcció de sintetitzadors modulars i instruments singulars com el <strong>theremin</strong>. Aquesta curiositat tècnica es combina amb una vessant percussiva molt activa: actualment exerceix de <strong>cap de colla tabalera</strong> amb el repenique, demostrant una gran capacitat d'adaptació a qualsevol instrument de percussió segons les necessitats del grup.</p>
         </div>
       </div>
     </section>
-
-    <!-- GALERIA -->
-    <section id="galeria" class="section">
-      <div class="wrap">
-        <h2>Galeria</h2>
-
-        <div class="grid gallery">
-          <figure>
-            <img src="@img/galeria-1.webp" alt="Foto del grup 1" loading="lazy" decoding="async" width="1000"
-              height="750" />
-          </figure>
-          <figure>
-            <img src="@img/galeria-2.webp" alt="Foto del grup 2" loading="lazy" decoding="async" width="1000"
-              height="750" />
-          </figure>
-          <figure>
-            <img src="@img/galeria-3.webp" alt="Foto del grup 3" loading="lazy" decoding="async" width="1000"
-              height="750" />
-          </figure>
-          <figure>
-            <img src="@img/galeria-4.webp" alt="Foto del grup 4" loading="lazy" decoding="async" width="1000"
-              height="750" />
-          </figure>
-          <figure>
-            <img src="@img/galeria-5.webp" alt="Foto del grup 5" loading="lazy" decoding="async" width="1000"
-              height="750" />
-          </figure>
-          <figure>
-            <img src="@img/galeria-6.webp" alt="Foto del grup 6" loading="lazy" decoding="async" width="1000"
-              height="750" />
-          </figure>
+    <section id="adria" class="section section--adria">
+      <div class="container">
+        <h2>Adrià</h2>
+        <div>
+          <p><strong>Guitarra i Baix</strong></p>
+          <p>Pare d’i3 (Les fulles), primer (Mimoses) i quart (Aurores Boreals)</p>
+          <p>L'Adrià va iniciar el seu viatge musical estudiant piano durant l'ESO. Des d'aleshores, la seva trajectòria ha estat un constant aprenentatge a través de diversos instruments i gèneres. Ha format part de projectes tan variats com el grup de versions <strong>Arkham</strong> i la banda de nu-metal <strong>Sölkantena</strong> com a baixista, a més d'explorar la composició i la guitarra rítmica en el duet acústic <a href="https://ineyadri.bandcamp.com" target="_blank" rel="noopener"><strong>Ine y Adri</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a> durant la seva etapa de batxillerat.</p>
+          <p>La seva experiència s'ha consolidat col·laborant com a guitarrista principal amb el cantautor <a href="https://normanbarrio.bandcamp.com" target="_blank" rel="noopener"><strong>Norman Barrio y compañía</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a>, i liderant els seus propis projectes de rock amb <a href="https://open.spotify.com/search/La%20Gran%20Bestia%20Pop" target="_blank" rel="noopener"><strong>La Gran Bestia Pop</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a> i de stoner rock amb <strong>Adversario</strong>. Per a ell, la música és l'eix vertebrador de totes les etapes de la seva vida; una activitat immersiva on, ja sigui escoltant, tocant o composant, perd la noció del temps i el món exterior, trobant en aquest "perdre l'oremus" el seu estat de màxima connexió i positivitat.</p>
         </div>
       </div>
     </section>
-
-    <!-- VÍDEOS -->
-    <section id="videos" class="section section-alt">
-      <div class="wrap">
-        <h2>Vídeos</h2>
-
-        <div class="grid videos">
-          <video controls preload="metadata"src="@video/video-1.mp4"></video>
-          <video controls preload="metadata"src="@video/video-2.mp4"></video>
+    <section id="pep" class="section section--pep">
+      <div class="container">
+        <h2>Pep</h2>
+        <div>
+          <p><strong>Guitarra</strong></p>
+          <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sapien vitae ex sodales lobortis. Quisque porttitor elementum magna quis mattis. Quisque erat dolor, viverra at accumsan ac, cursus sit amet velit. Duis quis eros posuere, fringilla turpis sit amet, hendrerit erat. Sed luctus feugiat nisl, id pharetra quam suscipit ac. Nullam scelerisque tortor sed orci mattis, a malesuada est sodales. Pellentesque ut tellus maximus, ornare velit id, faucibus libero. Sed ultricies leo malesuada fringilla commodo. Nunc dui arcu, sagittis quis turpis nec, cursus lacinia enim. In suscipit tincidunt lacus et pellentesque. Cras ante tortor, posuere ut nisi sed, ullamcorper auctor erat. Vestibulum blandit massa a dui sodales, et porttitor sem suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis varius sapien sit amet eros sodales, sit amet lacinia purus tincidunt. Morbi tincidunt euismod tellus. Duis blandit, metus vel scelerisque viverra, lacus turpis auctor felis, sed tempus nisi sapien quis augue.</p>
+          <p>Phasellus vel velit blandit, efficitur odio sed, eleifend augue. Aenean rhoncus rhoncus enim, non facilisis nibh sagittis at. Curabitur ut magna vel lacus venenatis ullamcorper sed sed nibh. Nunc non fringilla nisl. Praesent maximus risus velit, vitae hendrerit tortor aliquet in. Mauris egestas dolor a congue tempus. Nullam gravida, velit id ullamcorper accumsan, nulla lacus viverra tellus, et sollicitudin lorem sem dignissim ante. Nullam sed orci tincidunt, luctus neque ut, faucibus nisl. Vivamus sit amet enim sit amet enim rhoncus commodo. Etiam molestie nisl sed libero finibus tempus. Sed nisl risus, consectetur et ullamcorper id, porttitor quis risus. Praesent sed mollis elit. Integer blandit ex pretium felis rhoncus sodales. Cras porttitor et leo et pulvinar.</p>
         </div>
       </div>
     </section>
-
-    <!-- CONTACTE -->
-    <section id="contacte" class="section">
-      <div class="wrap">
-        <h2>Contacte</h2>
-        <form name="contacte-rainbows" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field"
-          class="contact-form">
-          <input type="hidden" name="form-name" value="contacte-rainbows" />
-
-          <p class="hp-field">
-            <label for="bot-field">No omplis aquest camp si ets una persona</label>
-            <input id="bot-field" name="bot-field" type="text" tabindex="-1" autocomplete="off" />
-          </p>
-
-          <div class="form-field">
-            <label for="nom">Nom</label>
-            <input id="nom" name="nom" type="text" autocomplete="name" />
-          </div>
-
-          <div class="form-field">
-            <label for="email">Mail de contacte <span aria-hidden="true">*</span></label>
-            <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required
-              aria-describedby="contacte-help" />
-          </div>
-
-          <div class="form-field">
-            <label for="comentari">Comentari</label>
-            <textarea id="comentari" name="comentari" rows="5"></textarea>
-          </div>
-
-          <p id="contacte-help" class="form-help">* Camp obligatori.</p>
-
-          <button type="submit" class="btn">Enviar</button>
-
-          <p class="form-feedback" data-form-feedback role="status" aria-live="polite" hidden></p>
-        </form>
+    <section id="xavi" class="section section--xavi">
+      <div class="container">
+        <h2>Xavi</h2>
+        <div>
+          <p><strong>Bateria</strong></p>
+          <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sapien vitae ex sodales lobortis. Quisque porttitor elementum magna quis mattis. Quisque erat dolor, viverra at accumsan ac, cursus sit amet velit. Duis quis eros posuere, fringilla turpis sit amet, hendrerit erat. Sed luctus feugiat nisl, id pharetra quam suscipit ac. Nullam scelerisque tortor sed orci mattis, a malesuada est sodales. Pellentesque ut tellus maximus, ornare velit id, faucibus libero. Sed ultricies leo malesuada fringilla commodo. Nunc dui arcu, sagittis quis turpis nec, cursus lacinia enim. In suscipit tincidunt lacus et pellentesque. Cras ante tortor, posuere ut nisi sed, ullamcorper auctor erat. Vestibulum blandit massa a dui sodales, et porttitor sem suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis varius sapien sit amet eros sodales, sit amet lacinia purus tincidunt. Morbi tincidunt euismod tellus. Duis blandit, metus vel scelerisque viverra, lacus turpis auctor felis, sed tempus nisi sapien quis augue.</p>
+          <p>Phasellus vel velit blandit, efficitur odio sed, eleifend augue. Aenean rhoncus rhoncus enim, non facilisis nibh sagittis at. Curabitur ut magna vel lacus venenatis ullamcorper sed sed nibh. Nunc non fringilla nisl. Praesent maximus risus velit, vitae hendrerit tortor aliquet in. Mauris egestas dolor a congue tempus. Nullam gravida, velit id ullamcorper accumsan, nulla lacus viverra tellus, et sollicitudin lorem sem dignissim ante. Nullam sed orci tincidunt, luctus neque ut, faucibus nisl. Vivamus sit amet enim sit amet enim rhoncus commodo. Etiam molestie nisl sed libero finibus tempus. Sed nisl risus, consectetur et ullamcorper id, porttitor quis risus. Praesent sed mollis elit. Integer blandit ex pretium felis rhoncus sodales. Cras porttitor et leo et pulvinar.</p>
+          <p>Nam non eros a ligula iaculis pulvinar quis eu est. Integer mollis egestas tincidunt. Maecenas et diam nulla. Vivamus elementum tortor vitae sodales molestie. In vitae fermentum arcu. Donec vulputate varius odio, at interdum nisl porttitor sed. Aliquam accumsan, justo vitae porttitor condimentum, est eros feugiat eros, quis convallis nunc eros eu tortor. Sed facilisis vitae nulla ac dictum.</p>
+        </div>
       </div>
     </section>
   </main>
-
-  <section class="player-dock" data-audio-dock aria-label="Reproductor en curs">
-    <div class="player-dock__head">
-      <p class="player-dock__label">Reproduint ara</p>
-      <div class="player-dock__actions">
-        <button type="button" class="dock-icon" data-audio-list aria-label="Veure llista de cançons">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path d="M4 6h10M4 12h10M4 18h10M18 7h2M18 13h2M18 19h2" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" />
-          </svg>
-        </button>
-        <button type="button" class="dock-icon" data-audio-minimize aria-label="Minimitzar reproductor">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path d="M6 10l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <button type="button" class="dock-icon" data-audio-close aria-label="Tancar reproductor">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path d="M6 6l12 12M18 6l-12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="player-dock__mini" aria-hidden="true">
-      <div class="player-dock__art player-dock__art--mini">
-        <div class="player-dock__note">♪</div>
-        <div class="player-dock__equalizer" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <p class="player-dock__title player-dock__title--mini"><span data-audio-title>Selecciona una cançó</span></p>
-      <div class="player-dock__mini-controls">
-        <button type="button" class="dock-control" data-audio-prev aria-label="Cançó anterior">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path d="M7 5v14M19 6l-8 6 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <button type="button" class="dock-control dock-control--play" data-audio-play aria-label="Reproduir cançó">
-          <svg class="icon-play" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path d="M8 5l11 7-11 7z" fill="currentColor" />
-          </svg>
-          <svg class="icon-pause" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path d="M8 5h3v14H8zM13 5h3v14h-3z" fill="currentColor" />
-          </svg>
-        </button>
-        <button type="button" class="dock-control" data-audio-next aria-label="Cançó següent">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path d="M17 5v14M5 6l8 6-8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <button type="button" class="dock-icon" data-audio-minimize aria-label="Expandir reproductor">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path d="M18 14l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <button type="button" class="dock-icon" data-audio-close aria-label="Tancar reproductor">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path d="M6 6l12 12M18 6l-12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="player-dock__body">
-      <div class="player-dock__art" aria-hidden="true">
-        <div class="player-dock__note">♪</div>
-        <div class="player-dock__equalizer" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div class="player-dock__meta">
-        <p class="player-dock__title"><span data-audio-title>Selecciona una cançó</span></p>
-      </div>
-      <div class="player-dock__utility">
-        <button type="button" class="dock-icon dock-icon--ghost" aria-label="Opcions de so">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path d="M4 10h4l5-4v12l-5-4H4z" fill="currentColor" />
-            <path d="M16 8c1.3 1.4 1.3 6.6 0 8M19 6c2.6 2.6 2.6 10.4 0 13" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" />
-          </svg>
-        </button>
-        <button type="button" class="dock-icon dock-icon--ghost" aria-label="Més opcions">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-            <path
-              d="M12 5.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm0 5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm0 5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"
-              fill="currentColor" />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="player-dock__progress">
-      <span class="player-dock__time" data-audio-current>0:00</span>
-      <input type="range" min="0" max="1000" value="0" data-audio-progress aria-label="Progrés de la cançó" />
-      <span class="player-dock__time" data-audio-duration>--:--</span>
-    </div>
-
-    <div class="player-dock__controls">
-      <button type="button" class="dock-control" data-audio-prev aria-label="Cançó anterior">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-          <path d="M7 5v14M19 6l-8 6 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </button>
-      <button type="button" class="dock-control dock-control--play" data-audio-play aria-label="Reproduir cançó">
-        <svg class="icon-play" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-          <path d="M8 5l11 7-11 7z" fill="currentColor" />
-        </svg>
-        <svg class="icon-pause" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-          <path d="M8 5h3v14H8zM13 5h3v14h-3z" fill="currentColor" />
-        </svg>
-      </button>
-      <button type="button" class="dock-control" data-audio-next aria-label="Cançó següent">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-          <path d="M17 5v14M5 6l8 6-8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </button>
-    </div>
-  </section>
-
   <%~ include("partials/footer.html.eta") %>
+
+  <link href="@styles/estils.css" rel="stylesheet">
+  <script src="@scripts/main.mjs" defer></script>
 </body>
 
 </html>

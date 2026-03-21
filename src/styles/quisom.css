@@ -1,0 +1,129 @@
+.quisom {
+    /* background gradient from top left to bottom right */
+    background: linear-gradient(to bottom right, #dfd7b6, #dfd7b6, #eedb92);
+    position: relative;
+}
+
+.quisom::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: var(--active-bg-img);
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: var(--active-bg-opacity, 0);
+    z-index: 0;
+}
+
+@media (min-width: 992px) {
+    .quisom::before {
+        background-size: contain;
+    }
+}
+
+.section {
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    padding-block: 50vh;
+    margin-bottom: 0;
+}
+.section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: .3;
+}
+
+.section--adria {
+    --bg-img: url("@img/quisom-adria.png");
+}
+.section--marina {
+    --bg-img: url("@img/quisom-marina.png");
+}
+.section--pep {
+    --bg-img: url("@img/quisom-pep.png");
+}
+.section--bertran {
+    --bg-img: url("@img/quisom-bertran.png");
+}
+.section--xavi {
+    --bg-img: url("@img/quisom-xavi.png");
+}
+.section--adria::before {
+    /* gradient from base beige to green and then back to beige */
+    background: linear-gradient(to bottom, #dfd7b6, #65f952, #dfd7b6);
+}
+.section--marina::before {
+    /* gradient from base beige to pink and then back to beige */
+    background: linear-gradient(to bottom, #dfd7b6, #ff4d4d, #dfd7b6);
+}
+.section--pep::before {
+    /* gradient from base beige to blue and then back to beige */
+    background: linear-gradient(to bottom, #dfd7b6, #4d4dff, #dfd7b6);
+}
+.section--bertran::before {
+    /* gradient from base beige to yellow and then back to beige */
+    background: linear-gradient(to bottom, #dfd7b6, #ffff4d, #dfd7b6);
+}
+.section--xavi::before {
+    /* gradient from base beige to purple and then back to beige */
+    background: linear-gradient(to bottom, #dfd7b6, #ff4dff, #dfd7b6);
+}
+
+@media (min-width: 992px) {
+    .quisom[data-active-section="adria"]::before {
+        left: 50%;
+    }
+    /* Main Background positioning */
+    .quisom[data-active-section="pep"]::before,
+    .quisom[data-active-section="xavi"]::before {
+        right: 10%;
+        left: 0;
+        background-position: center;
+    }
+
+    .quisom[data-active-section="marina"]::before,
+    .quisom[data-active-section="bertran"]::before {
+        left: 10%;
+        right: 0;
+        background-position: center;
+    }
+
+    /* Content Layout */
+    .section:nth-of-type(odd) .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+    /* Place odd section content on the right */
+    .section:nth-of-type(odd) .container > h2,
+    .section:nth-of-type(odd) .container > div {
+        grid-column: 1 / 2;
+        text-align: left;
+    }
+
+    .section:nth-of-type(even) .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+    /* Place even section content on the left */
+    .section:nth-of-type(even) .container > h2,
+    .section:nth-of-type(even) .container > div {
+        grid-column: 2 / 3;
+        text-align: left;
+    }
+}
+
+/* Header override: transparent on scroll for this page */
+header.site-header.is-scrolled {
+    background: transparent;
+    backdrop-filter: none;
+    border-color: transparent;
+}

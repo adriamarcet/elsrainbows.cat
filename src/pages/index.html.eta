@@ -16,6 +16,13 @@
 </head>
 
 <body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Anar a l'inici">
+        <img class="brand-logo" src="@img/R_perfil_fons_transp.webp" alt="R de Rainbows" width="1080" height="1080" decoding="async" fetchpriority="high" />
+      </a>
+    </div>
+  </header>
   <main id="inici" class="main">
     <!-- HERO amb slideshow -->
     <section class="hero" aria-label="Presentació">
@@ -358,8 +365,8 @@
         <h2>Vídeos</h2>
 
         <div class="grid videos">
-          <video controls preload="metadata"src="@video/video-1.mp4"></video>
-          <video controls preload="metadata"src="@video/video-2.mp4"></video>
+          <video controls preload="metadata" src="@video/video-1.mp4" title="Vídeo curt d'actuació 1"></video>
+          <video controls preload="metadata" src="@video/video-2.mp4" title="Vídeo curt d'actuació 2"></video>
         </div>
       </div>
     </section>
