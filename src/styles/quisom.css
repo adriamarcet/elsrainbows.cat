@@ -29,7 +29,7 @@
     min-height: 100vh;
     position: relative;
     z-index: 1;
-    padding-block: 50vh;
+    padding: 10vh 0;
     margin-bottom: 0;
 }
 .section::before {
@@ -39,7 +39,6 @@
     z-index: -1;
     opacity: .3;
 }
-
 .section--adria {
     --bg-img: url("@img/quisom-adria.png");
 }
@@ -55,22 +54,6 @@
 .section--xavi {
     --bg-img: url("@img/quisom-xavi.png");
 }
-/* .section--adria::before {
-    background: linear-gradient(to bottom, #dfd7b6, #65f952, #dfd7b6);
-}
-.section--marina::before {
-    background: linear-gradient(to bottom, #dfd7b6, #ff4d4d, #dfd7b6);
-}
-.section--pep::before {
-    background: linear-gradient(to bottom, #dfd7b6, #4d4dff, #dfd7b6);
-}
-.section--bertran::before {
-    background: linear-gradient(to bottom, #dfd7b6, #ffff4d, #dfd7b6);
-}
-.section--xavi::before {
-    background: linear-gradient(to bottom, #dfd7b6, #ff4dff, #dfd7b6);
-} */
-
 @media (min-width: 992px) {    
     .quisom[data-active-section="xavi"]::before,
     .quisom[data-active-section="adria"]::before,

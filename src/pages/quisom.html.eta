@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preload" as="image" href="@img/hero-1.webp" fetchpriority="high" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link href="@styles/estils.css" rel="stylesheet">
   <link rel="stylesheet" href="@styles/quisom.css" />
   <script src="@scripts/quisom.mjs" defer></script>
 </head>
@@ -55,8 +56,8 @@
       <div class="container">
         <h2>Marina</h2>
         <div>
-          <p><strong>Veus i guitarra</strong></p>
-          <p>Amb la veu, la guitarra i el kazoo com a eines d'expressió, la trajectòria de l'artista de projectes com <strong>Mare de segon</strong> i <strong>Galàxies</strong> s'ha forjat a través d'una vida íntimament lligada a la música. El seu referent principal és <strong>El Kanka</strong>, però la seva base musical neix a casa: el seu pare, també cantant i guitarrista, va ser qui li va transmetre la passió i els primers coneixements des de ben petita. Als 8 anys, aquesta vocació es va professionalitzar amb estudis de <strong>solfeig, cant i guitarra</strong>.</p>
+          <p><strong>Veu, guitarra i kazoo. Mare de segon, Galàxies.</strong></p>
+          <p>La música sempre ha format part de la seva vida. La seva base neix a casa ja que el seu pare, també cantant i guitarrista li va transmetre la passió i els primers coneixements desde ben petita. Als 8 anys va començar estudis de solfeig cant i guitarra.</p>
           <p>Al llarg de la seva carrera laboral, ha demostrat una gran versatilitat: des de girar per Mèxic amb la companyia de dansa contemporània <strong>Lanonima Imperial</strong> fins a cantar durant anys a l’orquestra <strong>Dia i nit</strong>, passant per la gravació de veus per a anuncis de televisió i joguines. Tot i aquest bagatge professional, sempre ha entès la música com una forma de diversió i llibertat, guardant un afecte especial per projectes com el grup de rumba <strong>Rachola</strong> i el canal de YouTube <a href="https://www.youtube.com/@lapeceramarinera" target="_blank" rel="noopener"><strong>La Pecera Marinera</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a>. Com a cantautora, ha compost temes propis tant per a les seves formacions com per a col·laboracions externes, entre elles <strong>Les Tirititrans</strong>.</p>
           <p>En l'etapa adulta, la seva visió de la música va fer un gir cap a la vessant terapèutica en cursar el <strong>màster de musicoteràpia a la Universitat de Barcelona (UB)</strong>, una disciplina que actualment compagina amb la seva faceta artística. Avui dia, manté viva la flama de l'espectacle a través del <strong>teatre musical familiar a Can Clariana</strong>, una activitat que gaudeix profundament compartint escenari i moments amb la seva filla i la seva mare.</p>
         </div>
@@ -66,8 +67,8 @@
       <div class="container">
         <h2>Bertran</h2>
         <div>
-          <p><strong>Teclats i sintetitzadors</strong></p>
-          <p>Actualment vinculat al projecte <strong>Aurores Boreals</strong>, aquest entusiasta de la música defineix el seu perfil a través dels <strong>teclats i el kazoo</strong>. La seva trajectòria va començar en la joventut com a guitarrista elèctric en diverses bandes de rock, evolucionant posteriorment cap a l'exploració de la música electrònica i les arts visuals. Amb aquesta faceta més tecnològica, ha arribat a actuar en escenaris de referència com el <strong>Sónar</strong> o <strong>ArtFutura</strong>.</p>
+          <p><strong>Teclats i sintetitzadors. Pare de quarts, Aurores Boreals.</strong></p>
+          <p>Com a entusiasta de la música defineix el seu perfil a través dels <strong>teclats i el kazoo</strong>. La seva trajectòria va començar en la joventut com a guitarrista elèctric en diverses bandes de rock, evolucionant posteriorment cap a l'exploració de la música electrònica i les arts visuals. Amb aquesta faceta més tecnològica, ha arribat a actuar en escenaris de referència com el <strong>Sónar</strong> o <strong>ArtFutura</strong>.</p>
           <p>Amb una base principalment autodidacta reforçada amb classes de piano, la seva passió per la sonoritat l'ha portat a la construcció de sintetitzadors modulars i instruments singulars com el <strong>theremin</strong>. Aquesta curiositat tècnica es combina amb una vessant percussiva molt activa: actualment exerceix de <strong>cap de colla tabalera</strong> amb el repenique, demostrant una gran capacitat d'adaptació a qualsevol instrument de percussió segons les necessitats del grup.</p>
         </div>
       </div>
@@ -76,10 +77,9 @@
       <div class="container">
         <h2>Adrià</h2>
         <div>
-          <p><strong>Guitarra i Baix</strong></p>
-          <p>Pare d’i3 (Les fulles), primer (Mimoses) i quart (Aurores Boreals)</p>
+          <p><strong>Guitarra i Baix, pare d'i3 (les fulles), primer (Mimoses) i quart (Aurores Boreals)</strong></p>
           <p>L'Adrià va iniciar el seu viatge musical estudiant piano durant l'ESO. Des d'aleshores, la seva trajectòria ha estat un constant aprenentatge a través de diversos instruments i gèneres. Ha format part de projectes tan variats com el grup de versions <strong>Arkham</strong> i la banda de nu-metal <strong>Sölkantena</strong> com a baixista, a més d'explorar la composició i la guitarra rítmica en el duet acústic <a href="https://ineyadri.bandcamp.com" target="_blank" rel="noopener"><strong>Ine y Adri</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a> durant la seva etapa de batxillerat.</p>
-          <p>La seva experiència s'ha consolidat col·laborant com a guitarrista principal amb el cantautor <a href="https://normanbarrio.bandcamp.com" target="_blank" rel="noopener"><strong>Norman Barrio y compañía</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a>, i liderant els seus propis projectes de rock amb <a href="https://open.spotify.com/search/La%20Gran%20Bestia%20Pop" target="_blank" rel="noopener"><strong>La Gran Bestia Pop</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a> i de stoner rock amb <strong>Adversario</strong>. Per a ell, la música és l'eix vertebrador de totes les etapes de la seva vida; una activitat immersiva on, ja sigui escoltant, tocant o composant, perd la noció del temps i el món exterior, trobant en aquest "perdre l'oremus" el seu estat de màxima connexió i positivitat.</p>
+          <p>La seva experiència s'ha consolidat col·laborant com a guitarrista principal amb el cantautor <a href="https://normanbarrio.bandcamp.com" target="_blank" rel="noopener"><strong>Norman Barrio y compañía</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a>, i liderant els seus propis projectes de rock amb <a href="https://open.spotify.com/search/La%20Gran%20Bestia%20Pop" target="_blank" rel="noopener"><strong>La Gran Bestia Pop</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a> i de stoner rock amb <strong>Adversario</strong>. Per a ell, la música és l'eix vertebrador de totes les etapes de la seva vida; una activitat immersiva on, ja sigui escoltant, tocant o composant.</p>
         </div>
       </div>
     </section>
@@ -107,7 +107,6 @@
   </main>
   <%~ include("partials/footer.html.eta") %>
 
-  <link href="@styles/estils.css" rel="stylesheet">
   <script src="@scripts/main.mjs" defer></script>
 </body>
 
