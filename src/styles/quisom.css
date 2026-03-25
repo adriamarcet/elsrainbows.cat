@@ -32,6 +32,15 @@
     padding: 10vh 0;
     margin-bottom: 0;
 }
+.section a {
+  display: inline-block;
+  color: var(--link-color);
+}
+.section a:hover,
+.section a:focus {
+    border-bottom: 3px solid var(--link-color);
+    margin-bottom: -3px;
+}
 .section::before {
     content: "";
     position: absolute;
@@ -40,15 +49,18 @@
     opacity: .3;
 }
 .section--adria {
+    --link-color: #5c58cb;
     --bg-img: url("@img/quisom-adria.png");
 }
 .section--marina {
+    --link-color: #23930c;
     --bg-img: url("@img/quisom-marina.png");
 }
 .section--pep {
     --bg-img: url("@img/quisom-pep.png");
 }
 .section--bertran {
+    --link-color: #cb5858;
     --bg-img: url("@img/quisom-bertran.png");
 }
 .section--xavi {
