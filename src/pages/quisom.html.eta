@@ -8,9 +8,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#111111" />
-  <title>Rainbows</title>
-  <meta name="description" content="Web oficial del grup Rainbows." />
-  <meta name="robots" content="noindex, nofollow" />
+  <title>Qui som | Els Rainbows</title>
+  <meta name="description" content="Coneix qui som Els Rainbows, la banda de mares i pares de l'Escola Arc Iris del Guinardó, i descobreix el projecte i els seus membres." />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preload" as="image" href="@img/hero-1.webp" fetchpriority="high" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
