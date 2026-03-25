@@ -1,6 +1,6 @@
 <header class="site-header">
     <div class="wrap header-inner">
-        <a class="brand" href="#inici" aria-label="Anar a l'inici">
+        <a class="brand" href="/" aria-label="Anar a l'inici">
         <img class="brand-logo" src="@img/R_perfil_fons_transp.webp" alt="R de Rainbows" width="1080" height="1080"
             decoding="async" fetchpriority="high" />
         <span class="sr-only">Rainbows</span>
@@ -13,11 +13,16 @@
         </button>
 
         <ul id="menu" class="nav-list">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#lletres">Lletres i àudios</a></li>
-            <li><a href="#galeria">Galeria</a></li>
-            <li><a href="#videos">Vídeos</a></li>
-            <li><a href="#contacte">Contacte</a></li>
+            <li>
+                <a class="nav-link-featured" href="/quisom.html">
+                    Qui som
+                </a>
+                <span class="nav-badge">Nou!</span>
+            </li>
+            <li><a href="/#lletres">Cançons</a></li>
+            <li><a href="/#galeria">Galeria</a></li>
+            <li><a href="/#videos">Vídeos</a></li>
+            <li><a href="/#contacte">Contacte</a></li>
         </ul>
         </nav>
     </div>

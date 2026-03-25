@@ -20,13 +20,7 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/" aria-label="Anar a l'inici">
-        <img class="brand-logo" src="@img/R_perfil_fons_transp.webp" alt="R de Rainbows" width="1080" height="1080" decoding="async" fetchpriority="high" />
-      </a>
-    </div>
-  </header>
+  <%~ include("partials/header.eta") %>
   <main id="inici" class="main quisom">
     <div class="container" style="padding-top: 10vh; padding-bottom: 20vh; z-index: 2; position: relative;">
       <hgroup style="text-align: center; margin-bottom: 3rem;">
@@ -58,7 +52,7 @@
         <div>
           <p><strong>Veu, guitarra i kazoo. Mare de segon, Galàxies.</strong></p>
           <p>La música sempre ha format part de la seva vida. La seva base neix a casa ja que el seu pare, també cantant i guitarrista li va transmetre la passió i els primers coneixements des de ben petita. Als 8 anys va començar estudis de solfeig cant i guitarra.</p>
-          <p>Al llarg de la seva carrera laboral, ha demostrat una gran versatilitat: des de girar per Mèxic amb la companyia de dansa contemporània <strong>Lanonima Imperial</strong> fins a cantar durant anys a l’orquestra <strong>Dia i nit</strong>, passant per la gravació de veus per a anuncis de televisió i joguines. Tot i aquest bagatge professional, sempre ha entès la música com una forma de diversió i llibertat, guardant un afecte especial per projectes com el grup de rumba <strong>Rachola</strong> i el canal de YouTube <a href="https://www.youtube.com/@lapeceramarinera" target="_blank" rel="noopener"><strong>La Pecera Marinera</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a>. Com a cantautora, ha compost temes propis tant per a les seves formacions com per a col·laboracions externes, entre elles <strong>Les Tirititrans</strong>.</p>
+          <p>Al llarg de la seva carrera laboral, ha demostrat una gran versatilitat: des de girar per Mèxic amb la companyia de dansa contemporània <strong>Lanonima Imperial</strong> fins a cantar durant anys a l’orquestra <strong>Dia i nit</strong>, passant per la gravació de veus per a anuncis de televisió i joguines. Tot i aquest bagatge professional, sempre ha entès la música com una forma de diversió i llibertat, guardant un afecte especial per projectes com el grup de rumba <strong>Rachola</strong> i el canal de YouTube <a href="https://www.youtube.com/@lapeceramarinera4184" target="_blank" rel="noopener"><strong>La Pecera Marinera</strong><span class="sr-only"> (s'obre en una pestanya nova)</span></a>. Com a cantautora, ha compost temes propis tant per a les seves formacions com per a col·laboracions externes, entre elles <strong>Les Tirititrans</strong>.</p>
           <p>En l'etapa adulta, la seva visió de la música va fer un gir cap al vessant terapèutic en cursar el <strong>màster de musicoteràpia a la Universitat de Barcelona (UB)</strong>, una disciplina que actualment compagina amb la seva faceta artística. Avui dia, manté viva la flama de l'espectacle a través del <strong>teatre musical familiar a Can Clariana</strong>, una activitat que gaudeix profundament compartint escenari i moments amb la seva filla i la seva mare.</p>
         </div>
       </div>

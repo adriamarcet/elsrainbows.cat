@@ -208,6 +208,10 @@ summary {
   margin: 0;
 }
 
+.nav-list li {
+  position: relative;
+}
+
 /* Enllaços del menú en blanc */
 .nav-list a {
   color: #fff;
@@ -215,6 +219,33 @@ summary {
   border-radius: 999px;
   border: 1px solid transparent;
   text-shadow: 0 2px 12px rgba(0, 0, 0, .45);
+}
+
+.nav-link-featured {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-badge {
+  position: absolute;
+  top: 9px;
+  right: -11px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .12rem .45rem;
+  border-radius: 999px;
+  background: #ffd54a;
+  color: #231900;
+  font-size: .68rem;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  text-shadow: none;
+  pointer-events: none;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, .18);
+  transform: rotate(16deg);
 }
 
 .nav-list a:hover {
@@ -1211,6 +1242,17 @@ video:focus-visible {
   .nav-list a {
     padding: .6rem .7rem;
     border-radius: 10px;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-link-featured {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
   }
 
   .brand-logo {
