@@ -24,7 +24,7 @@
   <link rel="alternate icon" type="image/webp" href="@img/favicon.webp">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
   <link href="@styles/estils.css" rel="stylesheet">
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="3ad5df51-b528-41d4-a1ac-36cb7516ca8e"></script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="e75a6203-ad85-418e-ad8a-c5fe46cd1e20"></script>
 </head>
 <body>
   <%~ it.content %>
