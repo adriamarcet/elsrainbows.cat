@@ -1,3 +1,7 @@
+<%
+  const headExtras = it.headExtras || it.extraMeta;
+  const bodyEndExtras = it.bodyEndExtras;
+%>
 <!doctype html>
 <html lang="ca" data-theme="light">
 <head>
@@ -11,8 +15,8 @@
     <meta name="robots" content="<%= it.robots %>" />
   <% } %>
 
-  <% if (it.extraMeta) { %>
-    <%~ it.extraMeta %>
+  <% if (headExtras) { %>
+    <%~ headExtras %>
   <% } %>
 
   <link rel="icon" type="image/png" href="@img/favicon.png">
@@ -25,6 +29,9 @@
 <body>
   <%~ it.content %>
   <%~ include("/partials/footer.html.eta") %>
+  <% if (bodyEndExtras) { %>
+    <%~ bodyEndExtras %>
+  <% } %>
   <script src="@scripts/main.mjs" defer></script>
 </body>
 </html>

@@ -1,22 +1,11 @@
-<!doctype html>
-<html lang="ca" data-theme="light">
-
-<head>
-  <link rel="icon" type="image/png" href="@img/favicon.png">
-  <link rel="shortcut icon" href="@img/favicon.png">
-  <link rel="alternate icon" type="image/webp" href="@img/favicon.webp">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#111111" />
-  <title>Rainbows</title>
-  <meta name="description" content="Web oficial del grup Rainbows." />
+<%
+  const header = include("partials/header.eta");
+  const headExtras = `
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preload" as="image" href="@img/hero-1.webp" fetchpriority="high" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-</head>
-
-<body>
-  <%~ include("partials/header.eta") %>
+`;
+  const content = `
+  ${header}
   <main id="inici" class="main">
     <!-- HERO amb slideshow -->
     <section class="hero" aria-label="Presentació">
@@ -537,10 +526,13 @@
     </div>
   </section>
 
-  <%~ include("partials/footer.html.eta") %>
+  </main>
+`;
+%>
 
-  <link href="@styles/estils.css" rel="stylesheet">
-  <script src="@scripts/main.mjs" defer></script>
-</body>
-
-</html>
+<%~ include("layouts/base.html.eta", {
+  title: "Rainbows",
+  description: "Web oficial del grup Rainbows.",
+  content,
+  headExtras
+}) %>

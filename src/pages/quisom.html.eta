@@ -1,25 +1,17 @@
-<!doctype html>
-<html lang="ca" data-theme="light">
-
-<head>
-  <link rel="icon" type="image/png" href="@img/favicon.png">
-  <link rel="shortcut icon" href="@img/favicon.png">
-  <link rel="alternate icon" type="image/webp" href="@img/favicon.webp">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#111111" />
-  <title>Qui som | Els Rainbows</title>
-  <meta name="description" content="Coneix qui som Els Rainbows, la banda de mares i pares de l'Escola Arc Iris del Guinardó, i descobreix el projecte i els seus membres." />
+<%
+  const header = include("partials/header.eta");
+  const headExtras = `
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-  <link rel="preload" as="image" href="@img/hero-1.webp" fetchpriority="high" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-  <link href="@styles/estils.css" rel="stylesheet">
+  <link rel="preload" as="image" href="@img/quisom-marina.png" />
+  <link rel="preload" as="image" href="@img/quisom-bertran.png" />
+  <link rel="preload" as="image" href="@img/quisom-adria.png" />
+  <link rel="preload" as="image" href="@img/quisom-pep.png" />
+  <link rel="preload" as="image" href="@img/quisom-xavi.png" />
   <link rel="stylesheet" href="@styles/quisom.css" />
   <script src="@scripts/quisom.mjs" defer></script>
-</head>
-
-<body>
-  <%~ include("partials/header.eta") %>
+`;
+  const content = `
+  ${header}
   <main id="inici" class="main quisom">
     <div class="container" style="padding-top: 10vh; padding-bottom: 20vh; z-index: 2; position: relative;">
       <hgroup style="text-align: center; margin-bottom: 3rem;">
@@ -100,9 +92,12 @@
       </div>
     </section>
   </main>
-  <%~ include("partials/footer.html.eta") %>
+`;
+%>
 
-  <script src="@scripts/main.mjs" defer></script>
-</body>
-
-</html>
+<%~ include("layouts/base.html.eta", {
+  title: "Qui som | Els Rainbows",
+  description: "Coneix qui som Els Rainbows, la banda de mares i pares de l'Escola Arc Iris del Guinardó, i descobreix el projecte i els seus membres.",
+  content,
+  headExtras
+}) %>
