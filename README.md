@@ -30,6 +30,7 @@ Salida en `dist/` con:
 - JS/CSS hasheados
 - imágenes/audio/video con nombre versionado
 - `index.html` y `gracies.html` apuntando a los ficheros versionados
+- `sitemap.xml` y `robots.txt` generados automáticamente
 
 ## Base visual usada
 
@@ -61,3 +62,18 @@ Pasos en Netlify:
 5. Deploy.
 
 Si quieres dominio propio (`elsrainbows.cat`), en `Domain settings` añade el dominio y apunta los DNS según las instrucciones de Netlify.
+
+## Sitemap
+
+El build genera automáticamente:
+
+- `dist/sitemap.xml`
+- `dist/robots.txt`
+
+Por defecto usa `https://elsrainbows.cat` como URL base.
+
+Si algún día quieres cambiar el dominio canónico, define la variable de entorno `SITE_URL` en Netlify o en local antes del build:
+
+```bash
+SITE_URL=https://tu-dominio.cat npm run build
+```

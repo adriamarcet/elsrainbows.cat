@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "webpack --mode production && node scripts/generate-sitemap.mjs",
     "build:dev": "webpack --mode development",
     "watch": "webpack --mode development --watch",
     "watch:dev": "sh -c 'webpack --mode development --watch & python3 -m http.server 5173 --directory dist'",
