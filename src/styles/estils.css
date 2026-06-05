@@ -379,6 +379,12 @@ summary {
   backdrop-filter: blur(2px);
 }
 
+.hero .btn-primary {
+  background: rgba(8, 66, 110);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, .92);
+}
+
 .hero .btn:hover {
   opacity: .9;
 }
