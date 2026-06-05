@@ -72,6 +72,69 @@
           <!-- CANÇÓ 1 -->
           <article class="song">
             <header class="song-head">
+              <h3>Seguir Creixent</h3>
+              <audio controls preload="none" src="@audio/Seguir_Creixent.mp3">
+                El teu navegador no suporta l'element d'àudio.
+              </audio>
+            </header>
+
+            <details class="lyrics">
+              <summary>Veure lletra</summary>
+              <div class="lyrics-body">
+                <p>
+                  Ja ha arribat el dia<br />
+                  Ja ha arribat el dia de marxar<br />
+                  veu entrar petits<br />
+                  i us heu fet grans<br />
+                  <br />
+                  Ja ha arribat el dia<br />
+                  ja ha arribat el dia<br />
+                  de seguir caminant<br />
+                  Porteu a la motxilla<br />
+                  un munt d’aprenentatges<br />
+                  que de segur us serviràn.<br />
+                  <br />
+                  I porteu al cor<br />
+                  7 colors gravats<br />
+                  que us recordaràn<br />
+                  on vareu passar<br />
+                  la vostre infancia<br />
+                  <br />
+                  la la lara lara lara la<br />
+                  juga, juga, juga i apendràs<br />
+                  milers de vivències<br />
+                  us heu emportat.<br />
+                  <br />
+                  Pati de lladoners, les mini pistes<br />
+                  les vostres petjades estàn per tot arreu i no s’esborren<br />
+                  les vostres petjades han quedat marcades en cada racó<br />
+                  <br />
+                  I s’encenen les llums<br />
+                  esteu preparats per donar aquest pas<br />
+                  desde aquí lo millor us volem desitjar.<br />
+                  <br />
+                  I porteu al cor<br />
+                  7 colors gravats<br />
+                  que us recordaràn<br />
+                  on vareu passar<br />
+                  la vostre infancia<br />
+                  <br />
+                  la la lara lara lara la<br />
+                  juga, juga, juga i apendràs<br />
+                  milers de vivències<br />
+                  us heu emportat.<br />
+                  <br />
+                  la la lara lara lara la<br />
+                  juga, juga, juga i apendràs<br />
+                  milers de vivències<br />
+                  us heu emportat.
+                  </p>
+              </div>
+            </details>
+          </article>
+          <!-- CANÇÓ 1 -->
+          <article class="song">
+            <header class="song-head">
               <h3>Arc is life</h3>
               <audio controls preload="none" src="@audio/Arc_is_life.mp3">
                 El teu navegador no suporta l'element d'àudio.
@@ -203,6 +266,7 @@
               </div>
             </details>
           </article>
+
           <!-- CANÇÓ 4 -->
           <article class="song">
             <header class="song-head">
