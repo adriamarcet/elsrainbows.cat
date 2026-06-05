@@ -17,6 +17,11 @@
                 <a class="nav-link-featured" href="/quisom.html">
                     Qui som
                 </a>
+            </li>
+            <li>
+                <a href="/concert-fi-de-curs.html">
+                    Canta amb nosaltres
+                </a>
                 <span class="nav-badge">Nou!</span>
             </li>
             <li><a href="/#lletres">Cançons</a></li>

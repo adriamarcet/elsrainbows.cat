@@ -1,0 +1,481 @@
+<%
+  const header = include("partials/header.eta");
+  const content = `
+  ${header}
+  <main id="inici" class="main">
+    <section class="section section-alt">
+      <div class="wrap">
+        <h1 style="margin-block-start: 3rem;">Concert Fi de Curs</h1>
+        <p style="max-width: 50ch; padding-block: 2rem;">Aquí teniu totes les lletres de les cançons que cantarem per la festa de fi de curs de l'AFA. Animeu-vos a cantar amb nosaltres!</p>
+        <nav id="toc" aria-label="Taula de continguts">
+          <ol>
+            <li><a href="#excel">Excel</a></li>
+            <li><a href="#arc-is-life-1">Arc is life</a></li>
+            <li><a href="#tot-el-que-ens-queda">Tot el que ens queda</a></li>
+            <li><a href="#el-monstre-de-banyoles">El monstre de Banyoles</a></li>
+            <li><a href="#i-was-made-for-loving-you">I Was Made for Loving You</a></li>
+            <li><a href="#no-controles">No Controles</a></li>
+            <li><a href="#gabies-als-ocells">Gàbies als ocells</a></li>
+            <li><a href="#golden">Golden</a></li>
+            <li><a href="#bella-ciao">Bella Ciao</a></li>
+            <li><a href="#seguir-creixent">Seguir creixent</a></li>
+            <li><a href="#arc-is-life-2">Arc is life</a></li>
+          </ol>
+        </nav>
+
+        <div class="songs">
+          <article id="excel" class="song">
+            <header class="song-head">
+              <h2>Excel</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                Benvinguts a la meva vida<br>
+                que està dintre d’aquest recuadre.<br>
+                Benvingudes a la meva vida<br>
+                d’esdeveniments i dates.<br>
+                Organitzada al milímetre<br>
+                entre l’excel i el Google Calendar<br>
+                Welcome a la meva vida.<br><br>
+                I quan de sobte puc improvitzar<br>
+                estic perduda, tot ho vull abarcar<br>
+                i quan de sobte toca el freestyle<br>
+                vec una llum<br>
+                i torno a ser jo al final<br><br>
+                Si t’explico fil per randa<br>
+                el meu dia no s’acaba<br>
+                si afegeixes algun acte<br>
+                puc sortir escaldada<br><br>
+                A tot vull arribar<br>
+                però el cap i el cos volen parar<br>
+                Així que per fi respiro<br>
+                M’he d’escoltar…<br>
+                m’he d’escoltar…<br><br>
+                Benvinguts a la meva vida<br>
+                que està dintre d’aquest<br>
+                recuadre.
+              </p>
+            </div>
+          </article>
+
+          <article id="arc-is-life-1" class="song">
+            <header class="song-head">
+              <h2>Arc is life</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                Na-na-na-na-na (hey)<br>
+                Na-na-na-na-na (all together now)<br>
+                Na-na-na-na-na (ooh)<br>
+                Na-na-na-na-na<br>
+                Live (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                La ba dab dab dab life (na-na-na-na-na)<br>
+                Arc iris life (na-na-na-na-na)<br>
+                Si camines per l’Arc iris<br>
+                tortugues trobaràs<br>
+                l’escola és un univers on sempre podràs jugar<br>
+                hi ha GALAXIES i PLANETES i AURORES BOREALS<br>
+                pasaràs de pati en pati<br>
+                de les escales no te'n lliuraràs.<br>
+                Arc it's life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                La ba dab dab dab life (na-na-na-na-na)<br>
+                Arc is life, l’hort ens agrada cuidar<br>
+                Arc is life, i treure el gegant Martí a passejar<br>
+                Arc is life, tenim un poder especial<br>
+                arc is life, de colors estem envoltats<br>
+                Si camines per l’Arc iris<br>
+                tortugues trobaràs<br>
+                l’escola és un univers on sempre podràs jugar<br>
+                hi ha FULLES i MIMOSES i també METEORITS<br>
+                passaràs de pati en pati<br>
+                de les escales no te’n lliuraràs.<br>
+                And it's life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                La ba dab dab dab life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                Si camines per l’Arc iris<br>
+                tortugues trobaràs<br>
+                l’escola és un univers on sempre podràs jugar<br>
+                Hi ha PEIXOS i SALAMANDRES i també VOLCANS<br>
+                Units ho donem tot<br>
+                Aquesta escola és fenomenal…<br>
+                Arc iris life!
+              </p>
+            </div>
+          </article>
+
+          <article id="tot-el-que-ens-queda" class="song">
+            <header class="song-head">
+              <h2>Tot el que ens queda</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                Tinc petons, amors i algun mal dia,<br />
+                tinc els de sempre quan no em tinc.<br />
+                He gastat tres vides.<br />
+                <br />
+                I quan vull descriure<br />
+                què tindré quan sigui vell,<br />
+                amb la veu ronca de viure<br />
+                i els records sobre la pell.<br />
+                <br />
+                Tinc dies que penso que no podré més<br />
+                i el món perd el pols amb la pena.<br />
+                Em moro per viure sense mirar el temps,<br />
+                que no sigui tan complicat!<br />
+                <br />
+                Que quan no tens res<br />
+                et queda la vida sencera.<br />
+                I quan no vagi bé<br />
+                ho farem d’una altra manera.<br />
+                <br />
+                Ara em tinc a mi,<br />
+                buscant tresors sota les pedres,<br />
+                tot el que tens, tot el que et queda.<br />
+                Tot el que ens queda.<br />
+                <br />
+                Tinc mig brick de llet a la nevera<br />
+                que se’m farà malbé.<br />
+                Mitja vida a la carretera,<br />
+                no sé quan us veuré.<br />
+                Tinc deu mil alarmes per llevar-me,<br />
+                això no ho canviaré.<br />
+                No tinc tanta por d’enamorar-me,<br />
+                potser aquest cop surt bé.<br />
+                <br />
+                Tinc dies que penso que no podré més<br />
+                i el món perd el pols amb la pena.<br />
+                Em moro per viure sense mirar el temps,<br />
+                que no sigui tan complicat!<br />
+                <br />
+                Que quan no tens res<br />
+                et queda la vida sencera.<br />
+                I quan no vagi bé<br />
+                ho farem d’una altra manera.<br />
+                <br />
+                Ara em tinc a mi,<br />
+                buscant tresors sota les pedres,<br />
+                tot el que tens, tot el que et queda.<br />
+                <br />
+                Que quan no tens res<br />
+                et queda la vida sencera.<br />
+                I quan no vagi bé<br />
+                ho farem d’una altra manera.<br />
+                <br />
+                Ara em tinc a mi,<br />
+                buscant tresors sota les pedres,<br />
+                tot el que tens, tot el que et queda.<br />
+                Tot el que ens queda.
+                </p>
+            </div>
+          </article>
+
+          <article id="el-monstre-de-banyoles" class="song">
+            <header class="song-head">
+              <h2>El monstre de Banyoles</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                Ens ho diu la història d'un vell poble<br>
+                que hi habitava un monstre, fa molts anys,<br>
+                diuen que treia foc per les orelles<br>
+                i per la boca, pel nas i pels queixals.<br><br>
+                És el mon, mon, el monstre de Banyoles<br>
+                que men, men, men, que menjava persones. Oh i tant!<br>
+                És el mon, mon, el monstre de Banyoles,<br>
+                una per dia sense fer terrabastall.<br><br>
+                Com veureu tenia tanta gana<br>
+                que s'empassava els bous de tres en tres<br>
+                i els cavallers, que amb ell volien brega,<br>
+                se'ls endrapava com qui no menja res.<br><br>
+                És el mon, mon, el monstre de Banyoles<br>
+                que men, men, men, que menjava persones. Oh i tant!<br>
+                És el mon, mon, el monstre de Banyoles,<br>
+                una per dia sense fer terrabastall.<br><br>
+                I la gent de tota la contrada un tracte,<br>
+                amb gràcia, amb ell varen signar,<br>
+                donant-li cols, patates i albergínies<br>
+                perquè aquell monstre es tornés vegetarià.<br><br>
+                És el mon, mon, el monstre de Banyoles<br>
+                que men, men, men, que menjava persones. Oh i tant!<br>
+                És el mon, mon, el monstre de Banyoles,<br>
+                una per dia sense fer terrabastall.<br><br>
+                És el mon, mon, el monstre de Banyoles<br>
+                que men, men, men, que menjava persones. Oh i tant!<br>
+                És el mon, mon, el monstre de Banyoles,<br>
+                una per dia sense fer terrabastall.
+              </p>
+            </div>
+          </article>
+
+          <article id="i-was-made-for-loving-you" class="song">
+            <header class="song-head">
+              <h2>I Was Made for Loving You</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                Du du du du du du du du du<br>
+                Du du du du du du duuuuuu<br><br>
+                Aquesta nit<br>
+                Has tornat a sortir<br>
+                Tu ens il.lumines<br>
+                En la foscor<br><br>
+                M’has inspirat<br>
+                Aquesta nit no puc dormir<br>
+                Només somiar<br>
+                Fins l’infinit…<br><br>
+                Reina de les aigües<br>
+                En el teu reflex em vull banyar<br>
+                T’he vist aquesta tarda<br>
+                El meu nadó t’ha senyalat.<br><br>
+                Lluna potent<br>
+                Remous humans i animals<br>
+                A la natura<br>
+                La fas vibrar.<br><br>
+                M’has inspirat<br>
+                Aquesta nit no puc dormir<br>
+                Només somiar<br>
+                Fins l’infinit…<br><br>
+                Reina de les aigües<br>
+                En el teu reflex em vull banyar<br>
+                T’he vist aquesta tarda<br>
+                El meu nadó t’ha senyalat<br><br>
+                Reina de les aigües<br>
+                En el teu reflex em vull banyar<br>
+                T’he vist aquesta tarda<br>
+                El meu nadó t’ha senyalat<br><br>
+                Uoo uoooo ooooo<br>
+                I cant get enough oh, ohh<br>
+                I cant get enough, oh, ohhh<br>
+                I cant get enough<br>
+                I cant get enough<br><br>
+                Du du du du du du du du du<br>
+                Du du du du du du duuuuuu<br><br>
+                Reina de les aigües<br>
+                En el teu reflex em vull banyar<br>
+                T’he vist aquesta tarda<br>
+                El meu nadó t’ha senyalat<br><br>
+                Reina de les aigües<br>
+                En el teu reflex em vull banyar<br>
+                T’he vist aquesta tarda<br>
+                El meu nadó t’ha senyalat
+              </p>
+            </div>
+          </article>
+
+          <article id="no-controles" class="song">
+            <header class="song-head">
+              <h2>No Controles</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                No controles mi forma de vestir<br>
+                porque es total y a mi me mola mucho<br>
+                No controles mi forma de pensar<br>
+                Porque es total y pienso lo que quiero<br><br>
+                NO CONTROLES, MIS VESTIDOS<br>
+                NO CONTROLES, MIS SENTIDOS<br><br>
+                No controles mi forma de bailar<br>
+                porque es total disfruto y soy libre<br>
+                No controles mi forma de mirar<br>
+                Porque es total miro y miro miro<br><br>
+                NO CONTROLES, MIS VESTIDOS<br>
+                NO CONTROLES, MIS SENTIDOS<br><br>
+                No controles mi forma de vestir<br>
+                porque es total y a mi me mola mucho<br>
+                No controles mi forma de pensar<br>
+                Porque es total y pienso lo que quiero<br><br>
+                NO CONTROLES, MIS VESTIDOS<br>
+                NO CONTROLES, MIS SENTIDOS<br><br>
+                NO CONTROLES, NO!!
+              </p>
+            </div>
+          </article>
+
+          <article id="gabies-als-ocells" class="song">
+            <header class="song-head">
+              <h2>Gàbies als ocells</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                Ha caigut a la meva mà<br>
+                Un ocell domesticat<br>
+                Tenia fred, l’ala un xic ferida<br>
+                Tenia por de l’anyorança d’estar sol<br><br>
+                Oh petit ocell, quina gran idea<br>
+                Que ningú s’espanti en sentir-la<br>
+                Jo sí que et deixaria lliure,<br>
+                trencaria les cadenes de la llibertat<br><br>
+                Per què els hi poseu / Gàbies als ocells<br>
+                Si són són lliures / Són lliures<br><br>
+                Ha fet niu a la meva mà<br>
+                Un ocell alliberat<br>
+                Cantava sol i ara en companyia<br>
+                Cantem encara que s’amagui el sol<br><br>
+                Amb tu no hi ha reixa que ens aturi<br>
+                Amb tu s’espanta la tristesa<br>
+                A mi m’encanta veure’ns créixer<br>
+                Sense cadenes i en llibertat<br><br>
+                Per què els hi poseu / Gàbies als ocells<br>
+                Si són són lliures / Són lliures<br>
+                Per què els hi poseu / Gàbies als ocells<br>
+                Si són són lliures / Són lliures<br><br>
+                Trenquem les gàbies, trenquem la tristesa<br>
+                Trenquem les armes i els malsons de guerra<br>
+                Cantem la pau a la nostra terra<br>
+                Volem pel món amb les ales ben obertes<br><br>
+                Per què els hi poseu / Gàbies als ocells?
+              </p>
+            </div>
+          </article>
+
+          <article id="golden" class="song">
+            <header class="song-head">
+              <h2>Golden</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                Tot era fred, tot era fosc, AH<br>
+                Perquè creix, AH al meu cor<br>
+                AAAH<br><br>
+                Si tu m’encens, em fas brillar, AH<br>
+                Ja mai no em faran dubtar<br>
+                I que no em fa por, ara se qui soc<br>
+                El meu camí ja està escrit<br><br>
+                Res em pot frenar, S’ha acabat dubtar<br>
+                Torno a brillar com abans<br>
+                Per cridar, fort:<br><br>
+                Ja no m’amago<br>
+                Ara brillo<br>
+                Per això sóc aquí<br>
+                Puc somiar-ho<br>
+                Puc sentir-ho<br>
+                Crec en mi<br><br>
+                Pujo a dalt de<br>
+                Tot,tot, tot<br>
+                Toco la glòria<br>
+                He vingut per fer historia<br>
+                Brillo quan sento l’eufòria<br>
+                Ohhhhh<br><br>
+                Sóc, sóc, sóc<br>
+                Indestructible<br>
+                Sento que tot és possible<br>
+                La veu em fa sentir invencible<br><br>
+                Ja no m’amago<br>
+                Ara brillo<br>
+                Escric el meu destí<br>
+                No tinc por, no puc mentir<br>
+                Vaig néixer per ser així<br><br>
+                Pujo a dalt de<br>
+                Tot,tot, tot<br>
+                Toco la glòria<br>
+                He vingut per fer historia<br>
+                Brillo quan sento l’eufòria<br>
+                Ohhhhh<br><br>
+                Sóc, sóc, sóc<br>
+                Indestructible<br>
+                Sento que tot es possible<br>
+                La veu em fa sentir invencible<br><br>
+                Ja no m’amago<br>
+                Ara brillo<br>
+                Escric el meu destí<br>
+                No tinc por, no puc mentir<br>
+                Vaig néixer per ser així
+              </p>
+            </div>
+          </article>
+
+          <article id="bella-ciao" class="song">
+            <header class="song-head">
+              <h2>Bella Ciao</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                M'he alçat ben d'hora, de matinada,<br>
+                Oh bella ciao, bella ciao, bella ciao, ciao, ciao!<br>
+                M'he alçat ben d'hora, de matinada,<br>
+                per cantar la llibertat.<br><br>
+                Porta’m on vagis, amiga meva,<br>
+                Oh bella ciao, bella ciao, bella ciao, ciao, ciao!<br>
+                Porta’m on vagis, amiga meva,<br>
+                juntes defensem la pau.<br><br>
+                Cantem juntes amb alegria,<br>
+                Oh bella ciao, bella ciao, bella ciao, ciao, ciao!<br>
+                Cantem juntes amb alegria,<br>
+                Viure en so-li-da-ri-tat!
+              </p>
+            </div>
+          </article>
+
+          <article id="seguir-creixent" class="song">
+            <header class="song-head">
+              <h2>Seguir creixent</h2>
+            </header>
+            <div class="lyrics-body">
+              <p><em>Lletra no disponible a <code>src/lyrics/</code>.</em></p>
+            </div>
+          </article>
+
+          <article id="arc-is-life-2" class="song">
+            <header class="song-head">
+              <h2>Arc is life</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                Na-na-na-na-na (hey)<br>
+                Na-na-na-na-na (all together now)<br>
+                Na-na-na-na-na (ooh)<br>
+                Na-na-na-na-na<br>
+                Live (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                La ba dab dab dab life (na-na-na-na-na)<br>
+                Arc iris life (na-na-na-na-na)<br>
+                Si camines per l’Arc iris<br>
+                tortugues trobaràs<br>
+                l’escola és un univers on sempre podràs jugar<br>
+                hi ha GALAXIES i PLANETES i AURORES BOREALS<br>
+                pasaràs de pati en pati<br>
+                de les escales no te'n lliuraràs.<br>
+                Arc it's life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                La ba dab dab dab life (na-na-na-na-na)<br>
+                Arc is life, l’hort ens agrada cuidar<br>
+                Arc is life, i treure el gegant Martí a passejar<br>
+                Arc is life, tenim un poder especial<br>
+                arc is life, de colors estem envoltats<br>
+                Si camines per l’Arc iris<br>
+                tortugues trobaràs<br>
+                l’escola és un univers on sempre podràs jugar<br>
+                hi ha FULLES i MIMOSES i també METEORITS<br>
+                passaràs de pati en pati<br>
+                de les escales no te’n lliuraràs.<br>
+                And it's life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                La ba dab dab dab life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                Si camines per l’Arc iris<br>
+                tortugues trobaràs<br>
+                l’escola és un univers on sempre podràs jugar<br>
+                Hi ha PEIXOS i SALAMANDRES i també VOLCANS<br>
+                Units ho donem tot<br>
+                Aquesta escola és fenomenal…<br>
+                Arc iris life!
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+`;
+%>
+
+<%~ include("layouts/base.html.eta", {
+  title: "Concert Fi de Curs | Els Rainbows",
+  description: "Setlist del concert Fi de Curs amb les lletres ordenades.",
+  content
+}) %>
