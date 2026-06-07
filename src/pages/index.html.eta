@@ -14,8 +14,8 @@
           <h1>Viu l'experiència Rainbows</h1>
           <p>Cançons, energia i comunitat per a infants i famílies.</p>
           <div class="hero-actions">
-            <a class="btn btn-pill" href="#sobre">Comença aquí</a>
-            <a class="btn btn-primary" href="/concert-fi-de-curs.html">Canta amb nosaltres</a>
+            <a class="btn btn-pill" href="#banner-canta">Comença aquí</a>
+            <a class="btn btn-primary" href="/canta-amb-nosaltres.html">Canta amb nosaltres</a>
           </div>
         </div>
 
@@ -35,6 +35,26 @@
         <a class="scroll-down" href="#sobre" aria-label="Baixar al següent contingut">
           <span aria-hidden="true">↓</span>
         </a>
+      </div>
+    </section>
+
+    <!-- BANNER CANTA AMB NOSALTRES -->
+    <section id="banner-canta" class="section section-banner" aria-label="Canta amb nosaltres">
+      <div class="wrap">
+        <div class="banner-copy">
+          <h2>Canta amb nosaltres al Colefest 2026!</h2>
+          <div class="banner-body">
+            <div class="banner-text">
+              <p>Consulta el setlist complet i les lletres del concert a la font d'En Fargues. Uneix-t'hi i prepara't per cantar amb el grup.</p>
+            </div>
+            <div class="banner-action">
+              <a class="btn btn-primary banner-cta" href="/canta-amb-nosaltres.html">
+                Canta amb nosaltres
+              </a>
+              <span class="nav-badge banner-badge">Nou!</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

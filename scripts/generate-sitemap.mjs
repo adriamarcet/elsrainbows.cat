@@ -7,7 +7,7 @@ const DIST_DIR = path.resolve("dist");
 const publicPages = [
   { path: "/", priority: "1.0" },
   { path: "/quisom.html", priority: "0.8" },
-  { path: "/concert-fi-de-curs.html", priority: "0.8" },
+  { path: "/canta-amb-nosaltres.html", priority: "0.8" },
 ];
 
 const toIsoDate = () => new Date().toISOString();

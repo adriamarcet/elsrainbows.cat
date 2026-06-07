@@ -39,7 +39,7 @@ module.exports = {
         { import: "./src/pages/privacitat.html.eta", filename: "privacitat.html" },
         { import: "./src/pages/cookies.html.eta", filename: "cookies.html" },
         { import: "./src/pages/quisom.html.eta", filename: "quisom.html" },
-        { import: "./src/pages/concert-fi-de-curs.html.eta", filename: "concert-fi-de-curs.html" },
+        { import: "./src/pages/canta-amb-nosaltres.html.eta", filename: "canta-amb-nosaltres.html" },
       ],
       js: {
         filename: "assets/js/[name].[contenthash:8].js",

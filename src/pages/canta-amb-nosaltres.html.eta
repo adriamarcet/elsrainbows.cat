@@ -5,21 +5,22 @@
   <main id="inici" class="main">
     <section class="section section-alt">
       <div class="wrap">
-        <h1 style="margin-block-start: 3rem;">Concert Fi de Curs</h1>
-        <p style="max-width: 50ch; padding-block: 2rem;">Aquí teniu totes les lletres de les cançons que cantarem per la festa de fi de curs de l'AFA. Animeu-vos a cantar amb nosaltres!</p>
+        <h1 style="margin-block-start: 3rem;">Colefest a la font d'En Fargues</h1>
+        <p style="max-width: 50ch; padding-block: 2rem;">Aquí teniu el setlist del Colefest a la font d'En Fargues amb les lletres de les cançons d’aquest concert. Animeu-vos a cantar amb nosaltres!</p>
         <nav id="toc" aria-label="Taula de continguts">
           <ol>
             <li><a href="#excel">Excel</a></li>
-            <li><a href="#arc-is-life-1">Arc is life</a></li>
             <li><a href="#tot-el-que-ens-queda">Tot el que ens queda</a></li>
-            <li><a href="#el-monstre-de-banyoles">El monstre de Banyoles</a></li>
-            <li><a href="#i-was-made-for-loving-you">I Was Made for Loving You</a></li>
+            <li><a href="#arc-is-live">Arc is Live</a></li>
             <li><a href="#no-controles">No Controles</a></li>
-            <li><a href="#gabies-als-ocells">Gàbies als ocells</a></li>
+            <li><a href="#el-monstre-de-banyoles">El monstre de Banyoles</a></li>
+            <li><a href="#el-cor-no-enganya-mai">El cor no enganya mai</a></li>
+            <li><a href="#vull-viure-daventures">Vull viure d’aventures</a></li>
+            <li><a href="#i-was-made-for-loving-you">I Was Made for Loving You</a></li>
             <li><a href="#golden">Golden</a></li>
+            <li><a href="#gabies-als-ocells">Gàbies als ocells</a></li>
             <li><a href="#bella-ciao">Bella Ciao</a></li>
             <li><a href="#seguir-creixent">Seguir creixent</a></li>
-            <li><a href="#arc-is-life-2">Arc is life</a></li>
           </ol>
         </nav>
 
@@ -54,55 +55,6 @@
                 Benvinguts a la meva vida<br>
                 que està dintre d’aquest<br>
                 recuadre.
-              </p>
-            </div>
-          </article>
-
-          <article id="arc-is-life-1" class="song">
-            <header class="song-head">
-              <h2>Arc is life</h2>
-            </header>
-            <div class="lyrics-body">
-              <p>
-                Na-na-na-na-na (hey)<br>
-                Na-na-na-na-na (all together now)<br>
-                Na-na-na-na-na (ooh)<br>
-                Na-na-na-na-na<br>
-                Live (na-na-na-na-na)<br>
-                Arc is life (na-na-na-na-na)<br>
-                La ba dab dab dab life (na-na-na-na-na)<br>
-                Arc iris life (na-na-na-na-na)<br>
-                Si camines per l’Arc iris<br>
-                tortugues trobaràs<br>
-                l’escola és un univers on sempre podràs jugar<br>
-                hi ha GALAXIES i PLANETES i AURORES BOREALS<br>
-                pasaràs de pati en pati<br>
-                de les escales no te'n lliuraràs.<br>
-                Arc it's life (na-na-na-na-na)<br>
-                Arc is life (na-na-na-na-na)<br>
-                Arc is life (na-na-na-na-na)<br>
-                La ba dab dab dab life (na-na-na-na-na)<br>
-                Arc is life, l’hort ens agrada cuidar<br>
-                Arc is life, i treure el gegant Martí a passejar<br>
-                Arc is life, tenim un poder especial<br>
-                arc is life, de colors estem envoltats<br>
-                Si camines per l’Arc iris<br>
-                tortugues trobaràs<br>
-                l’escola és un univers on sempre podràs jugar<br>
-                hi ha FULLES i MIMOSES i també METEORITS<br>
-                passaràs de pati en pati<br>
-                de les escales no te’n lliuraràs.<br>
-                And it's life (na-na-na-na-na)<br>
-                Arc is life (na-na-na-na-na)<br>
-                La ba dab dab dab life (na-na-na-na-na)<br>
-                Arc is life (na-na-na-na-na)<br>
-                Si camines per l’Arc iris<br>
-                tortugues trobaràs<br>
-                l’escola és un univers on sempre podràs jugar<br>
-                Hi ha PEIXOS i SALAMANDRES i també VOLCANS<br>
-                Units ho donem tot<br>
-                Aquesta escola és fenomenal…<br>
-                Arc iris life!
               </p>
             </div>
           </article>
@@ -173,6 +125,84 @@
             </div>
           </article>
 
+          <article id="arc-is-live" class="song">
+            <header class="song-head">
+              <h2>Arc is Live</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                Na-na-na-na-na (hey)<br>
+                Na-na-na-na-na (all together now)<br>
+                Na-na-na-na-na (ooh)<br>
+                Na-na-na-na-na<br>
+                Live (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                La ba dab dab dab life (na-na-na-na-na)<br>
+                Arc iris life (na-na-na-na-na)<br>
+                Si camines per l’Arc iris<br>
+                tortugues trobaràs<br>
+                l’escola és un univers on sempre podràs jugar<br>
+                hi ha GALAXIES i PLANETES i AURORES BOREALS<br>
+                pasaràs de pati en pati<br>
+                de les escales no te'n lliuraràs.<br>
+                Arc it's life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                La ba dab dab dab life (na-na-na-na-na)<br>
+                Arc is life, l’hort ens agrada cuidar<br>
+                Arc is life, i treure el gegant Martí a passejar<br>
+                Arc is life, tenim un poder especial<br>
+                arc is life, de colors estem envoltats<br>
+                Si camines per l’Arc iris<br>
+                tortugues trobaràs<br>
+                l’escola és un univers on sempre podràs jugar<br>
+                hi ha FULLES i MIMOSES i també METEORITS<br>
+                passaràs de pati en pati<br>
+                de les escales no te’n lliuraràs.<br>
+                And it's life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                La ba dab dab dab life (na-na-na-na-na)<br>
+                Arc is life (na-na-na-na-na)<br>
+                Si camines per l’Arc iris<br>
+                tortugues trobaràs<br>
+                l’escola és un univers on sempre podràs jugar<br>
+                Hi ha PEIXOS i SALAMANDRES i també VOLCANS<br>
+                Units ho donem tot<br>
+                Aquesta escola és fenomenal…<br>
+                Arc iris life!
+              </p>
+            </div>
+          </article>
+
+          <article id="no-controles" class="song">
+            <header class="song-head">
+              <h2>No Controles</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                No controles mi forma de vestir<br>
+                porque es total y a mi me mola mucho<br>
+                No controles mi forma de pensar<br>
+                Porque es total y pienso lo que quiero<br><br>
+                NO CONTROLES, MIS VESTIDOS<br>
+                NO CONTROLES, MIS SENTIDOS<br><br>
+                No controles mi forma de bailar<br>
+                porque es total disfruto y soy libre<br>
+                No controles mi forma de mirar<br>
+                Porque es total miro y miro miro<br><br>
+                NO CONTROLES, MIS VESTIDOS<br>
+                NO CONTROLES, MIS SENTIDOS<br><br>
+                No controles mi forma de vestir<br>
+                porque es total y a mi me mola mucho<br>
+                No controles mi forma de pensar<br>
+                Porque es total y pienso lo que quiero<br><br>
+                NO CONTROLES, MIS VESTIDOS<br>
+                NO CONTROLES, MIS SENTIDOS<br><br>
+                NO CONTROLES, NO!!
+              </p>
+            </div>
+          </article>
+
           <article id="el-monstre-de-banyoles" class="song">
             <header class="song-head">
               <h2>El monstre de Banyoles</h2>
@@ -207,6 +237,113 @@
                 que men, men, men, que menjava persones. Oh i tant!<br>
                 És el mon, mon, el monstre de Banyoles,<br>
                 una per dia sense fer terrabastall.
+              </p>
+            </div>
+          </article>
+
+          <article id="el-cor-no-enganya-mai" class="song">
+            <header class="song-head">
+              <h2>El cor no enganya mai</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                Perquè soc així<br />
+                i és així tal com em vull mostrar.<br />
+                Perquè sé com jo vull viure,<br />
+                perquè no em penso amagar.<br />
+                <br />
+                No em diguis què he de dir,<br />
+                què s'ha de sentir, com he d'estimar.<br />
+                El meu cor és infal·lible<br />
+                i és qui em dicta la veritat,<br />
+                <br />
+                i no m'enganya mai.<br />
+                El cor no enganya mai<br />
+                I si creus que em faré enrere<br />
+                quan m'intentis empipar,<br />
+                <br />
+                veuràs que som un exèrcit<br />
+                que camina amb fermesa<br />
+                que defensa la llibertat<br />
+                que somriu a la vida<br />
+                que combat la mentida<br />
+                dibuixant un futur més clar.<br />
+                <br />
+                Veuràs que som una xarxa<br />
+                cada cop més valenta<br />
+                que s'escampa sense parar.<br />
+                I ens fem costat els uns als altres.<br />
+                La diferència ens fa més grans:<br />
+                el cor no enganya mai.<br />
+                El cor no enganya mai.<br />
+                <br />
+                Jo dicto el meu destí,<br />
+                el meu tren cap a la felicitat.<br />
+                I si vols tu pots pujar-hi,<br />
+                tens un lloc al meu costat.<br />
+                <br />
+                Jo penso decidir<br />
+                el camí que em faci bategar.<br />
+                M'és igual si no t'agrado,<br />
+                és a mi a qui he d'agradar,<br />
+                <br />
+                perquè el cor no enganya mai.<br />
+                El cor no enganya mai.<br />
+                I si pretens que em faci enrere<br />
+                quan m'intentis empipar,<br />
+                <br />
+                veuràs que som un exèrcit<br />
+                que camina amb fermesa<br />
+                que defensa la llibertat<br />
+                que somriu a la vida<br />
+                que combat la mentida<br />
+                dibuixant un futur més clar.<br />
+                <br />
+                Veuràs que som una xarxa<br />
+                cada cop més valenta<br />
+                que s'escampa sense parar.<br />
+                I ens fem costat els uns als altres.<br />
+                La diferència ens fa més grans:<br />
+                el cor no enganya mai.<br />
+                El cor no enganya mai.<br />
+                <br />
+                Perquè soc així<br />
+                i és així tal com em vull mostrar.<br />
+                Ja he decidit el meu camí<br />
+                cap a la felicitat.<br />
+                <br />
+                El cor no enganya mai.<br />
+                El cor no enganya mai.<br />
+                El cor no enganya mai.<br />
+                El cor no enganya mai.<br />
+                El cor no enganya mai.<br />
+                El cor no enganya mai.
+              </p>
+            </div>
+          </article>
+
+          <article id="vull-viure-daventures" class="song">
+            <header class="song-head">
+              <h2>Vull viure d’aventures</h2>
+            </header>
+            <div class="lyrics-body">
+              <p>
+                Tot és molt fabulós, misteriós, somniador.<br />
+                Jo vull fer amb tu aquest viatge estrany i molt llunyà.<br />
+                Has de viure ben despert, no mirar cap enrere mai:<br />
+                només així, ben a l'aguait, podràs triomfar.<br />
+                <br />
+                Aixeca el cap, omple't el pit si vols que t'estimi.<br />
+                L'amor és fort i resplendent. Has de ser valent.<br />
+                <br />
+                Vull viure d'aventures i vull viure-les amb tu<br />
+                perquè sé que també ho vols.<br />
+                <br />
+                Tothom vol sentir amor i tenir joia al cor,<br />
+                però per aconseguir-ho abans hauràs de lluitar.<br />
+                Ja sé que ho faràs per mi, perquè vols el meu amor.<br />
+                Si estàs allunyat de mi,<br />
+                pensa que, amb la teva absència, el meu cor és trist.
               </p>
             </div>
           </article>
@@ -266,36 +403,6 @@
             </div>
           </article>
 
-          <article id="no-controles" class="song">
-            <header class="song-head">
-              <h2>No Controles</h2>
-            </header>
-            <div class="lyrics-body">
-              <p>
-                No controles mi forma de vestir<br>
-                porque es total y a mi me mola mucho<br>
-                No controles mi forma de pensar<br>
-                Porque es total y pienso lo que quiero<br><br>
-                NO CONTROLES, MIS VESTIDOS<br>
-                NO CONTROLES, MIS SENTIDOS<br><br>
-                No controles mi forma de bailar<br>
-                porque es total disfruto y soy libre<br>
-                No controles mi forma de mirar<br>
-                Porque es total miro y miro miro<br><br>
-                NO CONTROLES, MIS VESTIDOS<br>
-                NO CONTROLES, MIS SENTIDOS<br><br>
-                No controles mi forma de vestir<br>
-                porque es total y a mi me mola mucho<br>
-                No controles mi forma de pensar<br>
-                Porque es total y pienso lo que quiero<br><br>
-                NO CONTROLES, MIS VESTIDOS<br>
-                NO CONTROLES, MIS SENTIDOS<br><br>
-                NO CONTROLES, NO!!
-              </p>
-            </div>
-          </article>
-
-          <article id="gabies-als-ocells" class="song">
             <header class="song-head">
               <h2>Gàbies als ocells</h2>
             </header>
@@ -466,54 +573,6 @@
             </div>
           </article>
 
-          <article id="arc-is-life-2" class="song">
-            <header class="song-head">
-              <h2>Arc is life</h2>
-            </header>
-            <div class="lyrics-body">
-              <p>
-                Na-na-na-na-na (hey)<br>
-                Na-na-na-na-na (all together now)<br>
-                Na-na-na-na-na (ooh)<br>
-                Na-na-na-na-na<br>
-                Live (na-na-na-na-na)<br>
-                Arc is life (na-na-na-na-na)<br>
-                La ba dab dab dab life (na-na-na-na-na)<br>
-                Arc iris life (na-na-na-na-na)<br>
-                Si camines per l’Arc iris<br>
-                tortugues trobaràs<br>
-                l’escola és un univers on sempre podràs jugar<br>
-                hi ha GALAXIES i PLANETES i AURORES BOREALS<br>
-                pasaràs de pati en pati<br>
-                de les escales no te'n lliuraràs.<br>
-                Arc it's life (na-na-na-na-na)<br>
-                Arc is life (na-na-na-na-na)<br>
-                Arc is life (na-na-na-na-na)<br>
-                La ba dab dab dab life (na-na-na-na-na)<br>
-                Arc is life, l’hort ens agrada cuidar<br>
-                Arc is life, i treure el gegant Martí a passejar<br>
-                Arc is life, tenim un poder especial<br>
-                arc is life, de colors estem envoltats<br>
-                Si camines per l’Arc iris<br>
-                tortugues trobaràs<br>
-                l’escola és un univers on sempre podràs jugar<br>
-                hi ha FULLES i MIMOSES i també METEORITS<br>
-                passaràs de pati en pati<br>
-                de les escales no te’n lliuraràs.<br>
-                And it's life (na-na-na-na-na)<br>
-                Arc is life (na-na-na-na-na)<br>
-                La ba dab dab dab life (na-na-na-na-na)<br>
-                Arc is life (na-na-na-na-na)<br>
-                Si camines per l’Arc iris<br>
-                tortugues trobaràs<br>
-                l’escola és un univers on sempre podràs jugar<br>
-                Hi ha PEIXOS i SALAMANDRES i també VOLCANS<br>
-                Units ho donem tot<br>
-                Aquesta escola és fenomenal…<br>
-                Arc iris life!
-              </p>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -522,7 +581,7 @@
 %>
 
 <%~ include("layouts/base.html.eta", {
-  title: "Concert Fi de Curs | Els Rainbows",
-  description: "Setlist del concert Fi de Curs amb les lletres ordenades.",
+  title: "Colefest a la font d'En Fargues | Els Rainbows",
+  description: "Setlist del Colefest a la font d'En Fargues amb les lletres de les cançons.",
   content
 }) %>
