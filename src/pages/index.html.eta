@@ -93,9 +93,7 @@
           <article class="song">
             <header class="song-head">
               <h3>Seguir Creixent</h3>
-              <audio controls preload="none" src="@audio/Seguir_Creixent.mp3">
-                El teu navegador no suporta l'element d'àudio.
-              </audio>
+              <iframe style="border: 0; width: 100%; height: 42px; max-width: none;" src="https://bandcamp.com/EmbeddedPlayer/album=3900369956/size=small/bgcol=ffffff/linkcol=0687f5/track=3334618907/transparent=true/" seamless><a href="https://elsrainbows.bandcamp.com/album/el-primer-curs">El primer curs by Rainbows</a></iframe>
             </header>
 
             <details class="lyrics">
@@ -156,9 +154,7 @@
           <article class="song">
             <header class="song-head">
               <h3>Arc is life</h3>
-              <audio controls preload="none" src="@audio/Arc_is_life.mp3">
-                El teu navegador no suporta l'element d'àudio.
-              </audio>
+              <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3900369956/size=small/bgcol=ffffff/linkcol=0687f5/track=3992161956/transparent=true/" seamless><a href="https://elsrainbows.bandcamp.com/album/el-primer-curs">El primer curs by Rainbows</a></iframe>
             </header>
 
             <details class="lyrics">
@@ -213,7 +209,7 @@
           <article class="song">
             <header class="song-head">
               <h3>Bella ciao</h3>
-              <audio controls preload="none" src="@audio/Bella_ciao.mp3"></audio>
+              <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3900369956/size=small/bgcol=ffffff/linkcol=0687f5/track=607989861/transparent=true/" seamless><a href="https://elsrainbows.bandcamp.com/album/el-primer-curs">El primer curs by Rainbows</a></iframe>
             </header>
 
             <details class="lyrics">
@@ -242,7 +238,7 @@
           <article class="song">
             <header class="song-head">
               <h3>Excel</h3>
-              <audio controls preload="none" src="@audio/Excel.mp3"></audio>
+              <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3900369956/size=small/bgcol=ffffff/linkcol=0687f5/track=4149604174/transparent=true/" seamless><a href="https://elsrainbows.bandcamp.com/album/el-primer-curs">El primer curs by Rainbows</a></iframe>
             </header>
 
             <details class="lyrics">
@@ -291,6 +287,7 @@
           <article class="song">
             <header class="song-head">
               <h3>Golden</h3>
+              <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3900369956/size=small/bgcol=ffffff/linkcol=0687f5/track=1633852614/transparent=true/" seamless><a href="https://elsrainbows.bandcamp.com/album/el-primer-curs">El primer curs by Rainbows</a></iframe>
               <audio controls preload="none" src="@audio/Golden.mp3"></audio>
             </header>
 
@@ -354,7 +351,7 @@
           <article class="song">
             <header class="song-head">
               <h3>Monstre de Banyoles</h3>
-              <audio controls preload="none" src="@audio/Monstre_de_Banyoles.mp3"></audio>
+              <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3900369956/size=small/bgcol=ffffff/linkcol=0687f5/track=4086448690/transparent=true/" seamless><a href="https://elsrainbows.bandcamp.com/album/el-primer-curs">El primer curs by Rainbows</a></iframe>
             </header>
 
             <details class="lyrics">
