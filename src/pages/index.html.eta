@@ -288,7 +288,6 @@
             <header class="song-head">
               <h3>Golden</h3>
               <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3900369956/size=small/bgcol=ffffff/linkcol=0687f5/track=1633852614/transparent=true/" seamless><a href="https://elsrainbows.bandcamp.com/album/el-primer-curs">El primer curs by Rainbows</a></iframe>
-              <audio controls preload="none" src="@audio/Golden.mp3"></audio>
             </header>
 
             <details class="lyrics">
